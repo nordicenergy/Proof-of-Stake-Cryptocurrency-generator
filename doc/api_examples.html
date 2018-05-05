@@ -25,7 +25,7 @@
       <div id="contentSub" lang="fr" dir="ltr"></div>
       <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
         <h2><span class="mw-headline" id="Description"><span class="mw-headline-number">1</span> Description</span></h2>
-        <p>Examples of Nxt API calls are collected on this page, individually linked from the main <a href="api.html" title="The Nxt API">NXT API</a> page. The organization and ordering is the same for both pages so that the section numbers in the
+        <p>Examples of Nxt API calls are collected on this page, individually linked from the main <a href="api.html" title="The Nxt API">NEC API</a> page. The organization and ordering is the same for both pages so that the section numbers in the
           table of contents are identical. The preliminary sections preceding the examples simply link back to the main page. For example:
         </p>
         <p><a href="api.html#Description" title="The Nxt API">The Nxt API Description</a>
@@ -369,9 +369,9 @@
         <h3><span class="mw-headline" id="Delete_Account_Property"><span class="mw-headline-number">5.1</span> Delete Account Property</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=deleteAccountProperty&amp;
-  recipient=NXT-7A48-47JL-T7LD-D5FS3&amp;
+  recipient=NEC-7A48-47JL-T7LD-D5FS3&amp;
   property=testkey1&amp;
   secretPhrase=iWontTellYou&amp;
   feeNQT=100000000&amp;
@@ -395,11 +395,11 @@
         "property": "940296349549404868",
         "version.AccountPropertyDelete": 1
     },
-    "senderRS": "NXT-7A48-47JL-T7LD-D5FS3",
+    "senderRS": "NEC-7A48-47JL-T7LD-D5FS3",
     "subtype": 11,
     "amountNQT": "0",
     "sender": "12745647715474645062",
-    "recipientRS": "NXT-7A48-47JL-T7LD-D5FS3",
+    "recipientRS": "NEC-7A48-47JL-T7LD-D5FS3",
     "recipient": "12745647715474645062",
     "ecBlockHeight": 754255,
     "deadline": 60,
@@ -420,9 +420,9 @@
         <h3><span class="mw-headline" id="Get_Account"><span class="mw-headline-number">5.2</span> Get Account</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccount&amp;
-  account=NXT-4VNQ-RWZC-4WWQ-GVM8S
+  account=NEC-4VNQ-RWZC-4WWQ-GVM8S
 </pre>
         <p><b>Response:</b>
         </p>
@@ -434,8 +434,8 @@
    "currentHeightTo": "341420",
    "nextHeightFrom": "341420",
    "effectiveBalanceNXT": "544525",
-   "nextLesseeRS": "NXT-7WVC-W7TJ-REQ2-4VDJD",
-   "currentLesseeRS": "NXT-7WVC-W7TJ-REQ2-4VDJD",
+   "nextLesseeRS": "NEC-7WVC-W7TJ-REQ2-4VDJD",
+   "currentLesseeRS": "NEC-7WVC-W7TJ-REQ2-4VDJD",
    "currentHeightFrom": "308653",
    "nextHeightTo": "374187"
   }
@@ -459,8 +459,8 @@
    "asset": "4551058913252105307"
   }
  ],
- "currentLesseeRS": "NXT-TMVC-69YC-SJB4-8YCH7",
- "accountRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+ "currentLesseeRS": "NEC-TMVC-69YC-SJB4-8YCH7",
+ "accountRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
  "name": "mystical",
  "account": "17013046603665206934",
  "currentLeasingHeightFrom": 279739
@@ -471,7 +471,7 @@
         <h3><span class="mw-headline" id="Get_Account_Block_Count"><span class="mw-headline-number">5.3</span> Get Account Block Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountBlockCount&amp;
   account=7114946486381367146
 </pre>
@@ -487,7 +487,7 @@
         <h3><span class="mw-headline" id="Get_Account_Block_Ids"><span class="mw-headline-number">5.4</span> Get Account Block Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountBlockIds&amp;
   account=7114946486381367146&amp;
   lastIndex=5
@@ -511,7 +511,7 @@
         <h3><span class="mw-headline" id="Get_Account_Blocks"><span class="mw-headline-number">5.5</span> Get Account Blocks</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountBlocks&amp;
   account=7114946486381367146&amp;
   lastIndex=0
@@ -529,7 +529,7 @@
    "generatorPublicKey": "dbc809e8237914f25add0d349ea16b2ac05cae6882d0a1782d23605af264d97a",
    "baseTarget": "325377698",
    "payloadHash": "32df67383f63b74f1331bbdb6f1be424c87a1e6423fc7091d81683481eb6c4ca",
-   "generatorRS": "NXT-TMVC-69YC-SJB4-8YCH7",
+   "generatorRS": "NEC-TMVC-69YC-SJB4-8YCH7",
    "nextBlock": "3553212706398858282",
    "numberOfTransactions": 2,
    "blockSignature": "d30e3f95d547fa922feb31303f877a345d0ad8c232778a4507adf9082b5df3...",
@@ -553,14 +553,14 @@
         <h3><span class="mw-headline" id="Get_Account_Id"><span class="mw-headline-number">5.6</span> Get Account Id</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountId&amp;
   secretPhrase=IWontTellYou
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
- "accountRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+ "accountRS": "NEC-L6FM-89WK-VK8P-FCRBB",
  "publicKey": "57fb6f3a958e320bb49c4e81b4c2cf28b9f25d086c143b473beec228f79ff93c",
  "requestProcessingTime": 2,
  "account": "15323192282528158131"
@@ -571,9 +571,9 @@
         <h3><span class="mw-headline" id="Get_Account_Ledger"><span class="mw-headline-number">5.7</span> Get Account Ledger</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountLedger&amp;
-  account=NXT-7A48-47JL-T7LD-D5FS3
+  account=NEC-7A48-47JL-T7LD-D5FS3
 </pre>
         <p><b>Response:</b>
         </p>
@@ -587,7 +587,7 @@
       "isTransactionEvent": true,
       "balance": "90000",
       "holdingType": "UNCONFIRMED_CURRENCY_BALANCE",
-      "accountRS": "NXT-7A48-47JL-T7LD-D5FS3",
+      "accountRS": "NEC-7A48-47JL-T7LD-D5FS3",
       "block": "2303344830040052747",
       "event": "13236557417702245931",
       "account": "12745647715474645062",
@@ -603,7 +603,7 @@
         <h3><span class="mw-headline" id="Get_Account_Ledger_Entry"><span class="mw-headline-number">5.8</span> Get Account Ledger Entry</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountLedgerEntry&amp;
   ledgerId=532246
 </pre>
@@ -618,7 +618,7 @@
   "isTransactionEvent": true,
   "balance": "90000",
   "holdingType": "UNCONFIRMED_CURRENCY_BALANCE",
-  "accountRS": "NXT-7A48-47JL-T7LD-D5FS3",
+  "accountRS": "NEC-7A48-47JL-T7LD-D5FS3",
   "block": "2303344830040052747",
   "event": "13236557417702245931",
   "account": "12745647715474645062",
@@ -631,7 +631,7 @@
         <h3><span class="mw-headline" id="Get_Account_Lessors"><span class="mw-headline-number">5.9</span> Get Account Lessors</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountLessors&amp;
   account=7114946486381367146&amp;
   height=282497
@@ -642,11 +642,11 @@
  "lessors": [
   {
    "guaranteedBalanceNQT": "2643314085738687",
-   "lessorRS": "NXT-MRBN-8DFH-PFMK-A4DBM",
+   "lessorRS": "NEC-MRBN-8DFH-PFMK-A4DBM",
    "lessor": "9918441724915080500"
   }
  ],
- "accountRS": "NXT-TMVC-69YC-SJB4-8YCH7",
+ "accountRS": "NEC-TMVC-69YC-SJB4-8YCH7",
  "requestProcessingTime": 1,
  "account": "7114946486381367146",
  "height": 282497
@@ -657,19 +657,19 @@
         <h3><span class="mw-headline" id="Get_Account_Properties"><span class="mw-headline-number">5.10</span> Get Account Properties</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountProperties&amp;
-  recipient=NXT-7A48-47JL-T7LD-D5FS3
+  recipient=NEC-7A48-47JL-T7LD-D5FS3
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
-  "recipientRS": "NXT-7A48-47JL-T7LD-D5FS3",
+  "recipientRS": "NEC-7A48-47JL-T7LD-D5FS3",
   "recipient": "12745647715474645062",
   "requestProcessingTime": 0,
   "properties": [
     {
-      "setterRS": "NXT-7A48-47JL-T7LD-D5FS3",
+      "setterRS": "NEC-7A48-47JL-T7LD-D5FS3",
       "property": "testkey1",
       "setter": "12745647715474645062",
       "value": "testvalue1"
@@ -682,9 +682,9 @@
         <h3><span class="mw-headline" id="Get_Account_Public_Key"><span class="mw-headline-number">5.11</span> Get Account Public Key</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountPublicKey&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -698,9 +698,9 @@
         <h3><span class="mw-headline" id="Get_Account_Transaction_Ids"><span class="mw-headline-number">5.12</span> Get Account Transaction Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountTransactionIds&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -717,9 +717,9 @@
         <h3><span class="mw-headline" id="Get_Account_Transactions"><span class="mw-headline-number">5.13</span> Get Account Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountTransactions&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -737,11 +737,11 @@
    "version": 1,
    "ecBlockId": "17321329645912574173",
    "signatureHash": "b35eae7d2f01639810d37694138aa0a86fbbf8a9bf58c2be4f2a5b8f0f30b3f7",
-   "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "subtype": 0,
    "amountNQT": "100000000",
    "sender": "15323192282528158131",
-   "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+   "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
    "recipient": "17013046603665206934",
    "ecBlockHeight": 275727,
    "block": "8455642159445842600",
@@ -766,11 +766,11 @@
     "version.PublicKeyAnnouncement": 1,
     "recipientPublicKey": "57fb6f3a958e320bb49c4e81b4c2cf28b9f25d086c143b473beec228f79ff93c"
    },
-   "senderRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+   "senderRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
    "subtype": 0,
    "amountNQT": "200000000",
    "sender": "17013046603665206934",
-   "recipientRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "recipientRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "recipient": "15323192282528158131",
    "ecBlockHeight": 275723,
    "block": "14241452309033661857",
@@ -788,7 +788,7 @@
         <h3><span class="mw-headline" id="Get_Balance"><span class="mw-headline-number">5.14</span> Get Balance</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBalance&amp;
   account=7114946486381367146
 </pre>
@@ -808,9 +808,9 @@
         <h3><span class="mw-headline" id="Get_Blockchain_Transactions"><span class="mw-headline-number">5.15</span> Get Blockchain Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBlockchainTransactions&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA&amp;
+  account=NEC-4VDY-LNVT-LMAY-FMCKA&amp;
   lastIndex=0
 </pre>
         <p><b>Response:</b>
@@ -828,10 +828,10 @@
    "attachment": {
     "version.OrdinaryPayment": 0
    },
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "subtype": 0,
    "amountNQT": "1400000000",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "block": "6752144003309284467",
    "blockTimestamp": 46567698,
    "deadline": 1440,
@@ -855,7 +855,7 @@
         <h3><span class="mw-headline" id="Get_Guaranteed_Balance"><span class="mw-headline-number">5.16</span> Get Guaranteed Balance</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getGuaranteedBalance&amp;
   account=7114946486381367146&amp;
   numberOfConfirmations=1440
@@ -872,9 +872,9 @@
         <h3><span class="mw-headline" id="Get_Unconfirmed_Transaction_Ids"><span class="mw-headline-number">5.17</span> Get Unconfirmed Transaction Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getUnconfirmedTransactionIds&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -888,9 +888,9 @@
         <h3><span class="mw-headline" id="Get_Unconfirmed_Transactions"><span class="mw-headline-number">5.18</span> Get Unconfirmed Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getUnconfirmedTransactions&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -904,7 +904,7 @@
         <h3><span class="mw-headline" id="Search_Accounts"><span class="mw-headline-number">5.19</span> Search Accounts</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=searchAccounts&amp;
   query=testnet AND tyler
 </pre>
@@ -913,7 +913,7 @@
         <pre>{
  "accounts": [
   {
-   "accountRS": "NXT-7C4U-3Z9K-GZM8-CU8EJ",
+   "accountRS": "NEC-7C4U-3Z9K-GZM8-CU8EJ",
    "name": "Tyler Jordan",
    "description": "testnet account",
    "account": "12119426358687475802"
@@ -927,10 +927,10 @@
         <h3><span class="mw-headline" id="Send_Money"><span class="mw-headline-number">5.20</span> Send Money</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=sendMoney&amp;
   secretPhrase=IWontTellYou&amp;
-  recipient=NXT-4VNQ-RWZC-4WWQ-GVM8S&amp;
+  recipient=NEC-4VNQ-RWZC-4WWQ-GVM8S&amp;
   amountNQT=100000000&amp;
   feeNQT=100000000&amp;
   deadline=60
@@ -949,11 +949,11 @@
   "version": 1,
   "ecBlockId": "17321329645912574173",
   "signatureHash": "b35eae7d2f01639810d37694138aa0a86fbbf8a9bf58c2be4f2a5b8f0f30b3f7",
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 0,
   "amountNQT": "100000000",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+  "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
   "recipient": "17013046603665206934",
   "ecBlockHeight": 275727,
   "deadline": 60,
@@ -973,7 +973,7 @@
         <h3><span class="mw-headline" id="Set_Account_Info"><span class="mw-headline-number">5.21</span> Set Account Info</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=setAccountInfo&amp;
   secretPhrase=IWontTellYou&amp;
   name=iwonttellyou
@@ -1000,7 +1000,7 @@
    "description": "example account",
    "version.AccountInfo": 1
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 5,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -1022,9 +1022,9 @@
         <h3><span class="mw-headline" id="Set_Account_Property"><span class="mw-headline-number">5.22</span> Set Account Property</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?requestType=setAccountProperty&amp;secretPhrase=
+        <pre>http://localhost:6000/nxt?requestType=setAccountProperty&amp;secretPhrase=
 iwonttellyou&amp;property=country&amp;value=switzerland&amp;recipient=
-NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
+NEC-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
 </pre>
         <p>The request is shown above in URL format for consistency. The actual request must be an HTTP POST request with a multipart content type. For example, the corresponding cURL command is as follows:
         </p>
@@ -1049,11 +1049,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
             "value": "\"country\"",
             "version.AccountProperty": 1
         },
-        "senderRS": "NXT-EZQ9-35P5-XZ8C-4LW87",
+        "senderRS": "NEC-EZQ9-35P5-XZ8C-4LW87",
         "subtype": 10,
         "amountNQT": "0",
         "sender": "2493747385666535111",
-        "recipientRS": "NXT-EZQ9-35P5-XZ8C-4LW87",
+        "recipientRS": "NEC-EZQ9-35P5-XZ8C-4LW87",
         "recipient": "2493747385666535111",
         "ecBlockHeight": 684730,
         "deadline": 360,
@@ -1073,7 +1073,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Start_Funding_Monitor"><span class="mw-headline-number">5.23</span> Start Funding Monitor</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=startFundingMonitor&amp;
  property=funding&amp;
  amount=1000000000&amp;
@@ -1093,7 +1093,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Stop_Funding_Monitor"><span class="mw-headline-number">5.24</span> Stop Funding Monitor</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=stopFundingMonitor&amp;
  property=funding&amp;
  secretPhrase=IWontTellYou
@@ -1111,7 +1111,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Phasing_Only_Controls"><span class="mw-headline-number">6.1</span> Get All Phasing Only Controls</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllPhasingOnlyControls&amp;
   firstIndex=0&amp;
   lastIndex=1
@@ -1124,20 +1124,20 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "minDuration": 0,
    "votingModel": 0,
    "minBalance": "0",
-   "accountRS": "NXT-AVGK-SKJZ-583G-A689A",
+   "accountRS": "NEC-AVGK-SKJZ-583G-A689A",
    "quorum": "2",
    "maxFees": "0",
    "whitelist": [
     {
-     "whitelistedRS": "NXT-EVHD-5FLM-3NMQ-G46NR",
+     "whitelistedRS": "NEC-EVHD-5FLM-3NMQ-G46NR",
      "whitelisted": "16992224448242675179"
     },
     {
-     "whitelistedRS": "NXT-XK4R-7VJU-6EQG-7R335",
+     "whitelistedRS": "NEC-XK4R-7VJU-6EQG-7R335",
      "whitelisted": "5873880488492319831"
     },
     {
-     "whitelistedRS": "NXT-SZKV-J8TH-GSM9-9LKV6",
+     "whitelistedRS": "NEC-SZKV-J8TH-GSM9-9LKV6",
      "whitelisted": "8245583500397018683"
     }
    ],
@@ -1149,16 +1149,16 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "minDuration": 10,
    "votingModel": 0,
    "minBalance": "0",
-   "accountRS": "NXT-VSTJ-MHZK-A6N3-CHRRH",
+   "accountRS": "NEC-VSTJ-MHZK-A6N3-CHRRH",
    "quorum": "1",
    "maxFees": "1000000000",
    "whitelist": [
     {
-     "whitelistedRS": "NXT-D5A2-7CCE-G35P-BB324",
+     "whitelistedRS": "NEC-D5A2-7CCE-G35P-BB324",
      "whitelisted": "10448396398360890624"
     },
     {
-     "whitelistedRS": "NXT-KGPY-DF8U-HSF9-GQ69A",
+     "whitelistedRS": "NEC-KGPY-DF8U-HSF9-GQ69A",
      "whitelisted": "16437178058884561598"
     }
    ],
@@ -1175,9 +1175,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Phasing_Only_Control"><span class="mw-headline-number">6.2</span> Get Phasing Only Control</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPhasingOnlyControl&amp;
-  account=NXT-AVGK-SKJZ-583G-A689A
+  account=NEC-AVGK-SKJZ-583G-A689A
 </pre>
         <p><b>Response:</b>
         </p>
@@ -1185,20 +1185,20 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "minDuration": 0,
  "votingModel": 0,
  "minBalance": "0",
- "accountRS": "NXT-AVGK-SKJZ-583G-A689A",
+ "accountRS": "NEC-AVGK-SKJZ-583G-A689A",
  "quorum": "2",
  "maxFees": "0",
  "whitelist": [
   {
-   "whitelistedRS": "NXT-EVHD-5FLM-3NMQ-G46NR",
+   "whitelistedRS": "NEC-EVHD-5FLM-3NMQ-G46NR",
    "whitelisted": "16992224448242675179"
   },
   {
-   "whitelistedRS": "NXT-XK4R-7VJU-6EQG-7R335",
+   "whitelistedRS": "NEC-XK4R-7VJU-6EQG-7R335",
    "whitelisted": "5873880488492319831"
   },
   {
-   "whitelistedRS": "NXT-SZKV-J8TH-GSM9-9LKV6",
+   "whitelistedRS": "NEC-SZKV-J8TH-GSM9-9LKV6",
    "whitelisted": "8245583500397018683"
   }
  ],
@@ -1213,11 +1213,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Set_Phasing_Only_Control"><span class="mw-headline-number">6.3</span> Set Phasing Only Control</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=setPhasingOnlyControl&amp;
  controlVotingModel=0&amp;
  controlQuorum=1&amp;
- controlWhitelisted=NXT-5MYN-AP7M-NKMH-CRQJZ&amp;
+ controlWhitelisted=NEC-5MYN-AP7M-NKMH-CRQJZ&amp;
  secretPhrase=IWontTellYou&amp;
  feeNQT:100000000&amp;
  deadline=60
@@ -1252,7 +1252,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "phasingVotingModel": 0
    }
   },
-  "senderRS": "NXT-7A48-47JL-T7LD-D5FS3",
+  "senderRS": "NEC-7A48-47JL-T7LD-D5FS3",
   "subtype": 1,
   "amountNQT": "0",
   "sender": "12745647715474645062",
@@ -1276,12 +1276,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Buy_.2F_Sell_Alias"><span class="mw-headline-number">7.1</span> Buy / Sell Alias</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=sellAlias&amp;
   secretPhrase=IWontTellYou&amp;
   aliasName=nextus&amp;
   priceNQT=5&amp;
-  recipient=NXT-4VNQ-RWZC-4WWQ-GVM8S&amp;
+  recipient=NEC-4VNQ-RWZC-4WWQ-GVM8S&amp;
   feeNQT=100000000&amp;
   deadline=60
 </pre>
@@ -1304,11 +1304,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "priceNQT": "5",
    "version.AliasSell": 1
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 6,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+  "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
   "recipient": "17013046603665206934",
   "ecBlockHeight": 284050,
   "deadline": 60,
@@ -1328,7 +1328,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Set_Alias"><span class="mw-headline-number">7.2</span> Set Alias</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=setAlias&amp;
   secretPhrase=IWontTellYou&amp;
   aliasName=iwonttellyou&amp;
@@ -1355,7 +1355,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.AliasAssignment": 1,
    "uri": "acct:nxt-l6fm-89wk-vk8p-fcrbb@nxt"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 1,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -1377,7 +1377,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Delete_Alias"><span class="mw-headline-number">7.3</span> Delete Alias</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>https://localhost:7876/nxt?
+        <pre>https://localhost:6000/nxt?
   requestType=deleteAlias&amp;
   aliasName=mystical
 </pre>
@@ -1399,7 +1399,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.AliasDelete": 1,
    "alias": "mystical"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 8,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -1422,7 +1422,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Alias"><span class="mw-headline-number">7.4</span> Get Alias</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>https://localhost:7876/nxt?
+        <pre>https://localhost:6000/nxt?
   requestType=getAlias&amp;
   alias=15515279700680480368
 </pre>
@@ -1431,7 +1431,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "aliasURI": "http:\/\/google.com",
  "aliasName": "google",
- "accountRS": "NXT-FLVS-VRBV-LDPD-6DZ9W",
+ "accountRS": "NEC-FLVS-VRBV-LDPD-6DZ9W",
  "alias": "15515279700680480368",
  "requestProcessingTime": 1,
  "account": "5629477397208681336",
@@ -1443,9 +1443,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Alias_Count"><span class="mw-headline-number">7.5</span> Get Alias Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAliasCount&amp;
-  account=NXT-FLVS-VRBV-LDPD-6DZ9W
+  account=NEC-FLVS-VRBV-LDPD-6DZ9W
 </pre>
         <p><b>Response:</b>
         </p>
@@ -1459,7 +1459,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Aliases"><span class="mw-headline-number">7.6</span> Get Aliases</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>https://localhost:7876/nxt?
+        <pre>https://localhost:6000/nxt?
   requestType=getAliases&amp;
   account=5629477397208681336&amp;
   lastIndex=1
@@ -1471,7 +1471,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "aliasURI": "",
    "aliasName": "101",
-   "accountRS": "NXT-FLVS-VRBV-LDPD-6DZ9W",
+   "accountRS": "NEC-FLVS-VRBV-LDPD-6DZ9W",
    "alias": "8952438483248557843",
    "account": "5629477397208681336",
    "timestamp": 2409893
@@ -1485,7 +1485,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Aliases_Like"><span class="mw-headline-number">7.7</span> Get Aliases Like</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>https://localhost:7876/nxt?
+        <pre>https://localhost:6000/nxt?
   requestType=getAliasesLike&amp;
   aliasPrefix=mysteri
 </pre>
@@ -1496,7 +1496,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "aliasURI": "",
    "aliasName": "mysteries",
-   "accountRS": "NXT-9DZL-XFE2-EWE5-HVVAY",
+   "accountRS": "NEC-9DZL-XFE2-EWE5-HVVAY",
    "alias": "13234331415538245332",
    "account": "18384674354580664306",
    "timestamp": 4856820
@@ -1504,7 +1504,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "aliasURI": "anm",
    "aliasName": "mysterious",
-   "accountRS": "NXT-AHBB-DSVC-WS2L-EW8BC",
+   "accountRS": "NEC-AHBB-DSVC-WS2L-EW8BC",
    "alias": "8033154744709486670",
    "account": "14205721421835156777",
    "timestamp": 2417903
@@ -1519,10 +1519,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Decrypt_From"><span class="mw-headline-number">8.1</span> Decrypt From</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=decryptFrom&amp;
   secretPhrase=IWontTellYou&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB&amp;
+  account=NEC-L6FM-89WK-VK8P-FCRBB&amp;
   data=5c30bd27cc86a8ab0349aaf66deae3c0a9db5675b5c4ba973dd47f37e06157...&amp;
   nonce=7f3c9082c73a7bd825aa48d23fc138fd05a466700ff9fc3a040bbb29d3a60ee1&amp;
 </pre>
@@ -1538,7 +1538,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Download_Prunable_Message"><span class="mw-headline-number">8.2</span> Download Prunable Message</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=downloadPrunableMessage&amp;
   transaction=264609232955144528&amp;
   retrieve=true
@@ -1550,10 +1550,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Encrypt_To"><span class="mw-headline-number">8.3</span> Encrypt To</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=encryptTo&amp;
   secretPhrase=IWontTellYou&amp;
-  recipient=NXT-L6FM-89WK-VK8P-FCRBB&amp;
+  recipient=NEC-L6FM-89WK-VK8P-FCRBB&amp;
   messageToEncrypt=test message&amp;
 </pre>
         <p><b>Response:</b>
@@ -1569,7 +1569,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Prunable_Messages"><span class="mw-headline-number">8.4</span> Get All Prunable Messages</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllPrunableMessages&amp;
   lastIndex=0
 </pre>
@@ -1578,9 +1578,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "prunableMessages": [
   {
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "sender": "15295723609781267838",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "recipient": "11580081983047651163",
    "blockTimestamp": 46382992,
    "message": "This is a test prunable plain message.",
@@ -1597,7 +1597,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Prunable_Message"><span class="mw-headline-number">8.5</span> Get Prunable Message</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPrunableMessage&amp;
   transaction=16832262845403902696&amp;
   secretPhrase=secretPhrase
@@ -1605,14 +1605,14 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <p><b>Response:</b>
         </p>
         <pre>{
- "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "encryptedMessage": {
   "data": "ba6baa8361ac5bdb9cb591cee616dc5801a32ddf05b66a4ee527cd8d57b0...",
   "nonce": "41f93e32997c70937a005e5b0b42546a1efa9ea9eb012f98d7a92d0c5a8855a4"
  },
  "sender": "15295723609781267838",
  "decryptedMessage": "test prunable encrypted message",
- "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+ "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
  "recipient": "11580081983047651163",
  "blockTimestamp": 46117919,
  "requestProcessingTime": 3,
@@ -1627,9 +1627,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Prunable_Messages"><span class="mw-headline-number">8.6</span> Get Prunable Messages</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPrunableMessages&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA&amp;
+  account=NEC-4VDY-LNVT-LMAY-FMCKA&amp;
   lastIndex=0
 </pre>
         <p><b>Response:</b>
@@ -1637,13 +1637,13 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "prunableMessages": [
   {
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "encryptedMessage": {
     "data": "ba6baa8361ac5bdb9cb591cee616dc5801a32ddf05b66a4ee527cd8d57b0a...",
     "nonce": "41f93e32997c70937a005e5b0b42546a1efa9ea9eb012f98d7a92d0c5a8855a4"
    },
    "sender": "15295723609781267838",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "recipient": "11580081983047651163",
    "blockTimestamp": 46117919,
    "transaction": "16832262845403902696",
@@ -1660,9 +1660,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Shared_Key"><span class="mw-headline-number">8.7</span> Get Shared Key</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getSharedKey&amp;
- account=NXT-5MYN-AP7M-NKMH-CRQJZ&amp;
+ account=NEC-5MYN-AP7M-NKMH-CRQJZ&amp;
  secretPhrase=IWontTellYou&amp;
  nonce=0102030405060708091011121314151617181920212223242526272829303132
 </pre>
@@ -1678,7 +1678,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Read_Message"><span class="mw-headline-number">8.8</span> Read Message</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=readMessage&amp;
   transaction=9908575668289607167&amp;
   secretPhrase=IWontTellYou&amp;
@@ -1697,10 +1697,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Send_Message"><span class="mw-headline-number">8.9</span> Send Message</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=sendMessage&amp;
   secretPhrase=IWontTellYou&amp;
-  recipient=NXT-4VNQ-RWZC-4WWQ-GVM8S&amp;
+  recipient=NEC-4VNQ-RWZC-4WWQ-GVM8S&amp;
   message=Test Message.&amp;
   deadline=60
 </pre>
@@ -1723,11 +1723,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "messageIsText": true,
    "message": "Test message."
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 0,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+  "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
   "recipient": "17013046603665206934",
   "ecBlockHeight": 280756,
   "deadline": 60,
@@ -1747,7 +1747,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Verify_Prunable_Message"><span class="mw-headline-number">8.10</span> Verify Prunable Message</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=verifyPrunableMessage&amp;
   message=This is a test prunable plain message.
 </pre>
@@ -1768,7 +1768,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Cancel_Order"><span class="mw-headline-number">9.1</span> Cancel Order</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=cancelBidOrder&amp;
   secretPhrase=IWontTellYou&amp;
   order=17185236428295897167&amp;
@@ -1793,7 +1793,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.BidOrderCancellation": 1,
    "order": "17185236428295897167"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 5,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -1815,7 +1815,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Delete_Asset_Shares"><span class="mw-headline-number">9.2</span> Delete Asset Shares</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=deleteAssetShares&amp;
   asset=5920455660623529270&amp;
   quantityQNT=100&amp;
@@ -1843,7 +1843,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         "version.AssetDelete": 1,
         "asset": "5920455660623529270"
       },
-      "senderRS": "NXT-7A48-47JL-T7LD-D5FS3",
+      "senderRS": "NEC-7A48-47JL-T7LD-D5FS3",
       "subtype": 7,
       "amountNQT": "0",
       "sender": "12745647715474645062",
@@ -1866,7 +1866,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Dividend_Payment"><span class="mw-headline-number">9.3</span> Dividend Payment</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dividendPayment&amp;
   asset=3517042713515967694&amp;
   height=161157&amp;
@@ -1892,7 +1892,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "asset": "3517042713515967694",
    "height": 161157
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 6,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -1914,9 +1914,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Asset_Count"><span class="mw-headline-number">9.4</span> Get Account Asset Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountAssetCount&amp;
-  account=NXT-8N9W-TN4F-YA2S-H5B7R
+  account=NEC-8N9W-TN4F-YA2S-H5B7R
 </pre>
         <p><b>Response:</b>
         </p>
@@ -1930,9 +1930,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Assets"><span class="mw-headline-number">9.5</span> Get Account Assets</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountAssets&amp;
-  account=NXT-4VNQ-RWZC-4WWQ-GVM8S
+  account=NEC-4VNQ-RWZC-4WWQ-GVM8S
 </pre>
         <p><b>Response:</b>
         </p>
@@ -1954,9 +1954,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Current_Order_Ids"><span class="mw-headline-number">9.6</span> Get Account Current Order Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountCurrentBidOrderIds&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB&amp;
+  account=NEC-L6FM-89WK-VK8P-FCRBB&amp;
   asset=17554243582654188572
 </pre>
         <p><b>Response:</b>
@@ -1973,9 +1973,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Current_Orders"><span class="mw-headline-number">9.7</span> Get Account Current Orders</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountCurrentBidOrders&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -1984,7 +1984,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1000000",
    "priceNQT": "100",
-   "accountRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "accountRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "asset": "17554243582654188572",
    "type": "bid",
    "account": "15323192282528158131",
@@ -2000,7 +2000,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Assets"><span class="mw-headline-number">9.8</span> Get All Assets</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllAssets&amp;
   firstIndex=13&amp;
   lastIndex=13
@@ -2012,7 +2012,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "2100000000000000",
    "numberOfAccounts": 31,
-   "accountRS": "NXT-3TKA-UH62-478B-DQU6K",
+   "accountRS": "NEC-3TKA-UH62-478B-DQU6K",
    "decimals": 8,
    "numberOfTransfers": 63,
    "name": "mgwBTC",
@@ -2030,7 +2030,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Open_Orders"><span class="mw-headline-number">9.9</span> Get All Open Orders</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllOpenBidOrders&amp;
   firstIndex=123&amp;
   lastIndex=123
@@ -2043,7 +2043,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1000000",
    "priceNQT": "101",
-   "accountRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "accountRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "asset": "17554243582654188572",
    "type": "bid",
    "account": "15323192282528158131",
@@ -2058,7 +2058,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Trades"><span class="mw-headline-number">9.10</span> Get All Trades</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllTrades&amp;
   lastIndex=0
 </pre>
@@ -2070,11 +2070,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "seller": "14968762166783718535",
    "quantityQNT": "10000",
    "bidOrder": "1166717226538227076",
-   "sellerRS": "NXT-8F69-W9Z9-8M6Y-ETXGZ",
+   "sellerRS": "NEC-8F69-W9Z9-8M6Y-ETXGZ",
    "buyer": "202478233571806601",
    "priceNQT": "19796",
    "askOrder": "16222071953599729591",
-   "buyerRS": "NXT-RMEB-W7TE-28EM-2SUM7",
+   "buyerRS": "NEC-RMEB-W7TE-28EM-2SUM7",
    "decimals": 8,
    "name": "mgwBTC",
    "block": "8807797247643599359",
@@ -2094,7 +2094,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset"><span class="mw-headline-number">9.11</span> Get Asset</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAsset&amp;
   asset=17554243582654188572
 </pre>
@@ -2103,7 +2103,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "quantityQNT": "2100000000000000",
  "numberOfAccounts": 31,
- "accountRS": "NXT-3TKA-UH62-478B-DQU6K",
+ "accountRS": "NEC-3TKA-UH62-478B-DQU6K",
  "decimals": 8,
  "numberOfTransfers": 63,
  "name": "mgwBTC",
@@ -2119,7 +2119,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Account_Count"><span class="mw-headline-number">9.12</span> Get Asset Account Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetAccountCount&amp;
   asset=17554243582654188572
 </pre>
@@ -2135,7 +2135,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Accounts"><span class="mw-headline-number">9.13</span> Get Asset Accounts</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetAccounts&amp;
   asset=5539238107226883203
 </pre>
@@ -2145,7 +2145,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "accountAssets": [
   {
    "quantityQNT": "100000000",
-   "accountRS": "NXT-JTE5-HB7Y-QPS5-B58MZ",
+   "accountRS": "NEC-JTE5-HB7Y-QPS5-B58MZ",
    "unconfirmedQuantityQNT": "100000000",
    "asset": "5539238107226883203",
    "account": "11514793277306463619"
@@ -2159,7 +2159,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Deletes"><span class="mw-headline-number">9.14</span> Get Asset Deletes</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetDeletes&amp;
   asset=5920455660623529270
 </pre>
@@ -2170,7 +2170,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1000",
    "assetDelete": "16186302132012496205",
-   "accountRS": "NXT-G885-AKDX-5G2B-BLUCG",
+   "accountRS": "NEC-G885-AKDX-5G2B-BLUCG",
    "asset": "5920455660623529270",
    "account": "10892890577210644675",
    "height": 678815,
@@ -2179,7 +2179,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1",
    "assetDelete": "5520627816808994883",
-   "accountRS": "NXT-7A48-47JL-T7LD-D5FS3",
+   "accountRS": "NEC-7A48-47JL-T7LD-D5FS3",
    "asset": "5920455660623529270",
    "account": "12745647715474645062",
    "height": 513529,
@@ -2188,7 +2188,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1",
    "assetDelete": "14523372185703177675",
-   "accountRS": "NXT-7A48-47JL-T7LD-D5FS3",
+   "accountRS": "NEC-7A48-47JL-T7LD-D5FS3",
    "asset": "5920455660623529270",
    "account": "12745647715474645062",
    "height": 512164,
@@ -2203,7 +2203,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Dividends"><span class="mw-headline-number">9.15</span> Get Asset Dividends</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetDividends&amp;
   asset=4348103880042995903&amp;
   timestamp=105414366
@@ -2251,7 +2251,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Ids"><span class="mw-headline-number">9.16</span> Get Asset Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetIds&amp;
   firstIndex=15&amp;
   lastIndex=15
@@ -2270,7 +2270,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Transfers"><span class="mw-headline-number">9.17</span> Get Asset Transfers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetTransfers&amp;
   asset=17554243582654188572&amp;
   lastIndex=0
@@ -2281,10 +2281,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "transfers": [
   {
    "quantityQNT": "500000",
-   "senderRS": "NXT-9K6X-4ZQS-PCQN-465T4",
+   "senderRS": "NEC-9K6X-4ZQS-PCQN-465T4",
    "assetTransfer": "15255934090738722602",
    "sender": "2406158154854548637",
-   "recipientRS": "NXT-YMEM-ERX3-BFUZ-4MQ4P",
+   "recipientRS": "NEC-YMEM-ERX3-BFUZ-4MQ4P",
    "decimals": 8,
    "recipient": "3065494931320556947",
    "name": "mgwBTC",
@@ -2301,7 +2301,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Assets"><span class="mw-headline-number">9.18</span> Get Assets</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssets&amp;
   assets=17554243582654188572
 </pre>
@@ -2312,7 +2312,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "2100000000000000",
    "numberOfAccounts": 31,
-   "accountRS": "NXT-3TKA-UH62-478B-DQU6K",
+   "accountRS": "NEC-3TKA-UH62-478B-DQU6K",
    "decimals": 8,
    "numberOfTransfers": 63,
    "name": "mgwBTC",
@@ -2330,9 +2330,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Assets_By_Issuer"><span class="mw-headline-number">9.19</span> Get Assets By Issuer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetsByIssuer&amp;
-  account=NXT-DE2F-W76R-GL25-HMFPR&amp;
+  account=NEC-DE2F-W76R-GL25-HMFPR&amp;
   lastIndex=0
 </pre>
         <p><b>Response:</b>
@@ -2343,7 +2343,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    {
     "quantityQNT": "10000000000",
     "numberOfAccounts": 222,
-    "accountRS": "NXT-DE2F-W76R-GL25-HMFPR",
+    "accountRS": "NEC-DE2F-W76R-GL25-HMFPR",
     "decimals": 4,
     "numberOfTransfers": 278,
     "name": "NXTprivacy",
@@ -2362,7 +2362,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Expected_Asset_Deletes"><span class="mw-headline-number">9.20</span> Get Expected Asset Deletes</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getExpectedAssetDeletes
 </pre>
         <p><b>Response:</b>
@@ -2372,7 +2372,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1000",
    "assetDelete": "16186302132012496205",
-   "accountRS": "NXT-G885-AKDX-5G2B-BLUCG",
+   "accountRS": "NEC-G885-AKDX-5G2B-BLUCG",
    "asset": "5920455660623529270",
    "account": "10892890577210644675"
   }
@@ -2385,7 +2385,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Order"><span class="mw-headline-number">9.21</span> Get Order</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAskOrder&amp;
   order=6044046093672850641
 </pre>
@@ -2395,7 +2395,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "quantityQNT": "100",
  "priceNQT": "100000000",
  "transactionHeight": 346634,
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "transactionIndex": 0,
  "requestProcessingTime": 0,
  "asset": "17091401215301664836",
@@ -2410,7 +2410,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Order_Ids"><span class="mw-headline-number">9.22</span> Get Order Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBidOrderIds&amp;
   asset=17554243582654188572
 </pre>
@@ -2432,7 +2432,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Orders"><span class="mw-headline-number">9.23</span> Get Orders</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBidOrders&amp;
   asset=17554243582654188572&amp;
   firstIndex=3&amp;
@@ -2445,7 +2445,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "1000000",
    "priceNQT": "101",
-   "accountRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "accountRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "asset": "17554243582654188572",
    "type": "bid",
    "account": "15323192282528158131",
@@ -2461,7 +2461,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Expected_Order_Cancellations"><span class="mw-headline-number">9.24</span> Get Expected Order Cancellations</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getExpectedOrderCancellations
 </pre>
         <p><b>Response:</b>
@@ -2469,7 +2469,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "orderCancellations": [
   {
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "account": "15295723609781267838",
    "order": "8404616015717333294",
    "height": 348793,
@@ -2484,7 +2484,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Last_Trades"><span class="mw-headline-number">9.25</span> Get Last Trades</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getLastTrades&amp;
   assets=17091401215301664836
 </pre>
@@ -2496,11 +2496,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "seller": "11580081983047651163",
    "quantityQNT": "100",
    "bidOrder": "12461616895431889058",
-   "sellerRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "sellerRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "buyer": "15295723609781267838",
    "priceNQT": "100000000",
    "askOrder": "16690422801364092687",
-   "buyerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "buyerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "block": "9740784167963638799",
    "asset": "17091401215301664836",
    "askOrderHeight": 286247,
@@ -2518,7 +2518,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Order_Trades"><span class="mw-headline-number">9.26</span> Get Order Trades</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getOrderTrades&amp;
   askOrder=2769987326979385551&amp;
   includeAssetInfo=true
@@ -2531,11 +2531,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "seller": "8069635474378047786",
    "quantityQNT": "200",
    "bidOrder": "6083013926058683287",
-   "sellerRS": "NXT-5JBC-QQ8M-UAFJ-8UAZZ",
+   "sellerRS": "NEC-5JBC-QQ8M-UAFJ-8UAZZ",
    "buyer": "3617506283101058376",
    "priceNQT": "5000000",
    "askOrder": "2769987326979385551",
-   "buyerRS": "NXT-QXCA-TKAH-KK85-5QZE6",
+   "buyerRS": "NEC-QXCA-TKAH-KK85-5QZE6",
    "decimals": 0,
    "name": "TWT",
    "block": "17820716559461579006",
@@ -2555,7 +2555,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Trades"><span class="mw-headline-number">9.27</span> Get Trades</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getTrades&amp;
   asset=17554243582654188572&amp;
   lastIndex=0
@@ -2568,11 +2568,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "seller": "4012743767778395236",
    "quantityQNT": "922082",
    "bidOrder": "18332182738291742411",
-   "sellerRS": "NXT-J356-8B4K-L4DK-533EH",
+   "sellerRS": "NEC-J356-8B4K-L4DK-533EH",
    "buyer": "17013046603665206934",
    "priceNQT": "19607",
    "askOrder": "5860848661439768841",
-   "buyerRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+   "buyerRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
    "decimals": 8,
    "name": "mgwBTC",
    "block": "15627545821108097361",
@@ -2592,7 +2592,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Issue_Asset"><span class="mw-headline-number">9.28</span> Issue Asset</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=issueAsset&amp;
   publicKey=57fb6f3a958e320bb49c4e81b4c2cf28b9f25d086c143b473beec228f79ff93c&amp;
   name=SecretCoin&amp;
@@ -2619,7 +2619,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.AssetIssuance": 1,
    "decimals": 0
   },
-  "senderRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+  "senderRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
   "subtype": 0,
   "amountNQT": "0",
   "sender": "17013046603665206934",
@@ -2637,7 +2637,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Place_Order"><span class="mw-headline-number">9.29</span> Place Order</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=placeBidOrder&amp;
   secretPhrase=IWontTellYou&amp;
   asset=17554243582654188572&amp;
@@ -2666,7 +2666,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "asset": "17554243582654188572",
    "version.BidOrderPlacement": 1
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 3,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -2688,7 +2688,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Search_Assets"><span class="mw-headline-number">9.30</span> Search Assets</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=searchAssets&amp;
   query=assets AND production
 </pre>
@@ -2699,7 +2699,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "quantityQNT": "2100000000000000",
    "numberOfAccounts": 37,
-   "accountRS": "NXT-3TKA-UH62-478B-DQU6K",
+   "accountRS": "NEC-3TKA-UH62-478B-DQU6K",
    "decimals": 8,
    "numberOfTransfers": 84,
    "name": "mgwBTC",
@@ -2717,10 +2717,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Transfer_Asset"><span class="mw-headline-number">9.31</span> Transfer Asset</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=transferAsset&amp;
   secretPhrase=IWontTellYou&amp;
-  recipient=NXT-4VNQ-RWZC-4WWQ-GVM8S&amp;
+  recipient=NEC-4VNQ-RWZC-4WWQ-GVM8S&amp;
   asset=17554243582654188572&amp;
   quantityQNT=1000&amp;
   feeNQT=100000000&amp;
@@ -2745,11 +2745,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "quantityQNT": "1000",
    "asset": "17554243582654188572"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 1,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+  "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
   "recipient": "17013046603665206934",
   "ecBlockHeight": 288416,
   "deadline": 60,
@@ -2770,7 +2770,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Block"><span class="mw-headline-number">10.1</span> Get Block</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBlock&amp;
   block=8455642159445842600
 </pre>
@@ -2785,7 +2785,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "generatorPublicKey": "fbb72a280228af5c8c74c7c754a290e1539f839553c00bc560cac7bfdb324a7c",
  "baseTarget": "1530224444",
  "payloadHash": "633992be640a593ba04e31ca4028deed70bbf47cff333e2a0372a4e2a4aba205",
- "generatorRS": "NXT-TWU9-P3E4-HCDM-CQ9L6",
+ "generatorRS": "NEC-TWU9-P3E4-HCDM-CQ9L6",
  "nextBlock": "5937170741469897491",
  "requestProcessingTime": 175,
  "numberOfTransactions": 6,
@@ -2812,7 +2812,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Block_Id"><span class="mw-headline-number">10.2</span> Get Block Id</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBlockId&amp;
   height=0
 </pre>
@@ -2828,7 +2828,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Blocks"><span class="mw-headline-number">10.3</span> Get Blocks</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBlocks&amp;
   lastIndex=1
 </pre>
@@ -2845,7 +2845,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "generatorPublicKey": "98ccf5d5173b13e4c9eab2631372f61ce8ba506db559d73b285073a689872e75",
    "baseTarget": "151761236",
    "payloadHash": "82f8c8ca1f8f2252172ed1e9836d5228432fcb18aecfa7d55a119efcd242321c",
-   "generatorRS": "NXT-TGNZ-E8VK-69EX-3L9LX",
+   "generatorRS": "NEC-TGNZ-E8VK-69EX-3L9LX",
    "numberOfTransactions": 5,
    "blockSignature": "76a3f7f966256c4985262fb4622190b2b9a19b900f6ce443ab7d581e3176c...",
    "transactions": [
@@ -2871,7 +2871,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "generatorPublicKey": "11636697faf4ade736cedf6c528bec0142353c4d93fce05cdb818c49e0390422",
    "baseTarget": "303522472",
    "payloadHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "generatorRS": "NXT-2EYT-C522-VL6G-FQSMP",
+   "generatorRS": "NEC-2EYT-C522-VL6G-FQSMP",
    "nextBlock": "7299310714263322546",
    "numberOfTransactions": 0,
    "blockSignature": "90464d183ed01cb0930ef527e746eaa092d1558697c369cc9246add5f6eec...",
@@ -2892,7 +2892,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_EC_Block"><span class="mw-headline-number">10.4</span> Get EC Block</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getECBlock
 </pre>
         <p><b>Response:</b>
@@ -2910,7 +2910,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Delisting"><span class="mw-headline-number">11.1</span> DGS Delisting</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsDelisting&amp;
   goods=11813734897437346473
   secretPhrase=IWontTellYou&amp;
@@ -2935,7 +2935,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.DigitalGoodsDelisting": 1,
    "goods": "11813734897437346473"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 1,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -2957,7 +2957,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Delivery"><span class="mw-headline-number">11.2</span> DGS Delivery</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsDelivery&amp;
   purchase=3723760852542296589&amp;
   goodsToEncrypt=Download Code.&amp;
@@ -2987,11 +2987,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.DigitalGoodsDelivery": 1,
    "goodsNonce": "4cb474ec53a590c6fd20d050c429d009ddefd286b2782eb3a0782ae45c2bbbbd"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 5,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+  "recipientRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
   "recipient": "7580519603555678830",
   "ecBlockHeight": 292069,
   "deadline": 60,
@@ -3011,7 +3011,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Feedback"><span class="mw-headline-number">11.3</span> DGS Feedback</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsFeedback&amp;
   purchase=10234639413366748292&amp;
   secretPhrase=IWontTellYou&amp;
@@ -3040,11 +3040,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.DigitalGoodsFeedback": 1,
    "message": "Thank you!"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 6,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+  "recipientRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
   "recipient": "7580519603555678830",
   "ecBlockHeight": 292938,
   "deadline": 60,
@@ -3064,7 +3064,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Listing"><span class="mw-headline-number">11.4</span> DGS Listing</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsListing&amp;
   secretPhrase=IWontTellYou&amp;
   name=Test Product&amp;
@@ -3097,7 +3097,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.DigitalGoodsListing": 1,
    "tags": "test, product, tag, extra"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 0,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -3119,7 +3119,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Price_Change"><span class="mw-headline-number">11.5</span> DGS Price Change</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsPriceChange&amp;
   goods=11813734897437346473&amp;
   priceNQT=200000000&amp;
@@ -3146,7 +3146,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "priceNQT": "200000000",
    "version.DigitalGoodsPriceChange": 1
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 2,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -3168,7 +3168,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Purchase"><span class="mw-headline-number">11.6</span> DGS Purchase</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsPurchase&amp;
   goods=1587116104511359906&amp;
   quantity=1&amp;
@@ -3198,11 +3198,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "deliveryDeadlineTimestamp": 31800000,
    "version.DigitalGoodsPurchase": 1
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 4,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+  "recipientRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
   "recipient": "7580519603555678830",
   "ecBlockHeight": 292925,
   "deadline": 60,
@@ -3222,7 +3222,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Quantity_Change"><span class="mw-headline-number">11.7</span> DGS Quantity Change</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsQuantityChange&amp;
   goods=11813734897437346473&amp;
   deltaQuantity=-1&amp;
@@ -3249,7 +3249,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.DigitalGoodsQuantityChange": 1,
    "deltaQuantity": -1
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 3,
   "amountNQT": "0",
   "sender": "15323192282528158131",
@@ -3271,7 +3271,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="DGS_Refund"><span class="mw-headline-number">11.8</span> DGS Refund</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dgsRefund&amp;
   purchase=3723760852542296589&amp;
   refundNQT=100000000&amp;
@@ -3298,11 +3298,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.DigitalGoodsRefund": 1,
    "refundNQT": "100000000"
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 7,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+  "recipientRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
   "recipient": "7580519603555678830",
   "ecBlockHeight": 292899,
   "deadline": 60,
@@ -3322,9 +3322,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Expired_Purchases"><span class="mw-headline-number">11.9</span> Get DGS Expired Purchases</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSExpiredPurchases&amp;
-  seller=NXT-XK4R-7VJU-6EQG-7R335
+  seller=NEC-XK4R-7VJU-6EQG-7R335
 </pre>
         <p><b>Response:</b>
         </p>
@@ -3335,12 +3335,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "priceNQT": "1000000000",
    "quantity": 1,
    "deliveryDeadlineTimestamp": 44955165,
-   "buyerRS": "NXT-XK4R-7VJU-6EQG-7R335",
+   "buyerRS": "NEC-XK4R-7VJU-6EQG-7R335",
    "pending": false,
    "purchase": "17272258199467687054",
    "name": "MyProduct",
    "goods": "4830545483228225683",
-   "sellerRS": "NXT-XK4R-7VJU-6EQG-7R335",
+   "sellerRS": "NEC-XK4R-7VJU-6EQG-7R335",
    "buyer": "5873880488492319831",
    "timestamp": 44397533
   }
@@ -3353,7 +3353,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Good"><span class="mw-headline-number">11.10</span> Get DGS Good</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSGood&amp;
   goods=11813734897437346473
 </pre>
@@ -3364,7 +3364,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "quantity": 3,
  "goods": "11813734897437346473",
  "description": "Testing the DGS.",
- "sellerRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+ "sellerRS": "NEC-L6FM-89WK-VK8P-FCRBB",
  "requestProcessingTime": 1,
  "delisted": false,
  "parsedTags": [
@@ -3385,9 +3385,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Goods"><span class="mw-headline-number">11.11</span> Get DGS Goods</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSGoods&amp;
-  seller=NXT-L6FM-89WK-VK8P-FCRBB
+  seller=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -3398,7 +3398,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "quantity": 2,
    "goods": "11813734897437346473",
    "description": "Testing the DGS.",
-   "sellerRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "sellerRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "delisted": false,
    "parsedTags": [
     "test",
@@ -3421,9 +3421,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Goods_Count"><span class="mw-headline-number">11.12</span> Get DGS Goods Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSGoodsCount&amp;
-  seller=NXT-L6FM-89WK-VK8P-FCRBB
+  seller=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -3437,7 +3437,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Goods_Purchase_Count"><span class="mw-headline-number">11.13</span> Get DGS Goods Purchase Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSGoodsPurchaseCount&amp;
   goods=11813734897437346473
 </pre>
@@ -3453,7 +3453,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Goods_Purchases"><span class="mw-headline-number">11.14</span> Get DGS Goods Purchases</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSGoodsPurchases&amp;
   goods=11813734897437346473
 </pre>
@@ -3467,12 +3467,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "pending": false,
    "purchase": "3723760852542296589",
    "goods": "11813734897437346473",
-   "sellerRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "sellerRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "buyer": "7580519603555678830",
    "priceNQT": "200000000",
    "deliveryDeadlineTimestamp": 31600000,
    "goodsIsText": false,
-   "buyerRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+   "buyerRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
    "name": "Test Product",
    "goodsData": {
     "data": "aef91bfe543844964b0dadc51c6fe4c624b6b0c72c23c5c61f7e626f51e15...",
@@ -3489,9 +3489,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Pending_Purchases"><span class="mw-headline-number">11.15</span> Get DGS Pending Purchases</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSPendingPurchases&amp;
-  seller=NXT-L6FM-89WK-VK8P-FCRBB
+  seller=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -3502,12 +3502,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "priceNQT": "200000000",
    "quantity": 2,
    "deliveryDeadlineTimestamp": 31600000,
-   "buyerRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+   "buyerRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
    "pending": true,
    "purchase": "3723760852542296589",
    "name": "Test Product",
    "goods": "11813734897437346473",
-   "sellerRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "sellerRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "buyer": "7580519603555678830",
    "timestamp": 31520720
   }
@@ -3520,7 +3520,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Purchase"><span class="mw-headline-number">11.16</span> Get DGS Purchase</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSPurchase&amp;
   purchase=10234639413366748292
 </pre>
@@ -3542,13 +3542,13 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "pending": false,
  "purchase": "10234639413366748292",
  "goods": "1587116104511359906",
- "sellerRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+ "sellerRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
  "requestProcessingTime": 1,
  "buyer": "15323192282528158131",
  "priceNQT": "100000000",
  "deliveryDeadlineTimestamp": 31800000,
  "goodsIsText": false,
- "buyerRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+ "buyerRS": "NEC-L6FM-89WK-VK8P-FCRBB",
  "discountNQT": "100000000",
  "name": "Test Product",
  "goodsData": {
@@ -3563,9 +3563,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Purchase_Count"><span class="mw-headline-number">11.17</span> Get DGS Purchase Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSPurchaseCount&amp;
-  seller=NXT-L6FM-89WK-VK8P-FCRBB
+  seller=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
@@ -3579,9 +3579,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Purchases"><span class="mw-headline-number">11.18</span> Get DGS Purchases</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSPurchases&amp;
-  seller=NXT-L6FM-89WK-VK8P-FCRBB&amp;
+  seller=NEC-L6FM-89WK-VK8P-FCRBB&amp;
   lastIndex=0
 </pre>
         <p><b>Response:</b>
@@ -3593,12 +3593,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "priceNQT": "200000000",
    "quantity": 2,
    "deliveryDeadlineTimestamp": 31600000,
-   "buyerRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+   "buyerRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
    "pending": true,
    "purchase": "3723760852542296589",
    "name": "Test Product",
    "goods": "11813734897437346473",
-   "sellerRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+   "sellerRS": "NEC-L6FM-89WK-VK8P-FCRBB",
    "buyer": "7580519603555678830",
    "timestamp": 31520720
   }
@@ -3611,7 +3611,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Tag_Count"><span class="mw-headline-number">11.19</span> Get DGS Tag Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSTagCount
 </pre>
         <p><b>Response:</b>
@@ -3626,7 +3626,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Tags"><span class="mw-headline-number">11.20</span> Get DGS Tags</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSTags&amp;
   lastIndex=0
 </pre>
@@ -3648,7 +3648,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_DGS_Tags_Like"><span class="mw-headline-number">11.21</span> Get DGS Tags Like</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDGSTagsLike&amp;
   tagPrefix=item
 </pre>
@@ -3670,7 +3670,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Search_DGS_Goods"><span class="mw-headline-number">11.22</span> Search DGS Goods</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=searchDGSGoods&amp;
   tag=te?t AND prod*
 </pre>
@@ -3683,7 +3683,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "quantity": 1,
    "goods": "1587116104511359906",
    "description": "This is a test. Please do not order.",
-   "sellerRS": "NXT-6GMG-FC5F-YSX6-8CVEL",
+   "sellerRS": "NEC-6GMG-FC5F-YSX6-8CVEL",
    "delisted": false,
    "parsedTags": [
     "test",
@@ -3707,7 +3707,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Start_.2F_Stop_.2F_Get_Forging"><span class="mw-headline-number">12.1</span> Start / Stop / Get Forging</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=startForging&amp;
   secretPhrase=IWontTellYou
 </pre>
@@ -3724,10 +3724,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Lease_Balance"><span class="mw-headline-number">12.2</span> Lease Balance</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=leaseBalance&amp;
   period=1440&amp;
-  recipient=NXT-4VNQ-RWZC-4WWQ-GVM8S&amp;
+  recipient=NEC-4VNQ-RWZC-4WWQ-GVM8S&amp;
   secretPhrase=IWontTellYou&amp;
   feeNQT=100000000&amp;
   deadline=60
@@ -3750,11 +3750,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.EffectiveBalanceLeasing": 1,
    "period": 1440
   },
-  "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+  "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
   "subtype": 0,
   "amountNQT": "0",
   "sender": "15323192282528158131",
-  "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+  "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
   "recipient": "17013046603665206934",
   "ecBlockHeight": 280672,
   "deadline": 60,
@@ -3774,7 +3774,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Next_Block_Generators"><span class="mw-headline-number">12.3</span> Get Next Block Generators</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getNextBlockGenerators&amp;
   limit=3
 </pre>
@@ -3786,21 +3786,21 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "generators": [
   {
    "effectiveBalanceNXT": 5400786,
-   "accountRS": "NXT-8HNT-4ZTF-ZXH3-7RU38",
+   "accountRS": "NEC-8HNT-4ZTF-ZXH3-7RU38",
    "deadline": 4,
    "account": "5982846390354787993",
    "hitTime": 112224054
   },
   {
    "effectiveBalanceNXT": 4061204,
-   "accountRS": "NXT-HLNR-4HDK-HQUJ-37545",
+   "accountRS": "NEC-HLNR-4HDK-HQUJ-37545",
    "deadline": 35,
    "account": "1263370831364868759",
    "hitTime": 112224085
   },
   {
    "effectiveBalanceNXT": 8847921,
-   "accountRS": "NXT-ZEKG-CHYB-N8AR-4TQ3U",
+   "accountRS": "NEC-ZEKG-CHYB-N8AR-4TQ3U",
    "deadline": 52,
    "account": "3244519536310858286",
    "hitTime": 112224102
@@ -3817,7 +3817,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Decode_Hallmark"><span class="mw-headline-number">13.1</span> Decode Hallmark</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=decodeHallmark&amp;
   hallmark=827ed8cf83bbd36419002759d960a1bec952f2209db8ed3be958...
 </pre>
@@ -3826,7 +3826,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "date": "2013-12-10",
  "valid": true,
- "accountRS": "NXT-FEJ5-H4YB-QD3D-2L3W2",
+ "accountRS": "NEC-FEJ5-H4YB-QD3D-2L3W2",
  "host": "nxttyclub.info",
  "weight": 100,
  "requestProcessingTime": 2,
@@ -3838,7 +3838,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Mark_Host"><span class="mw-headline-number">13.2</span> Mark Host</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=markHost&amp;
   secretPhrase=IWontTellYou&amp;
   host=iwonttellyou.com&amp;
@@ -3858,9 +3858,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Can_Delete_Currency"><span class="mw-headline-number">14.1</span> Can Delete Currency</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=canDeleteCurrency&amp;
-  account=NXT-2HCZ-6GCJ-2XGV-EDRPH&amp;
+  account=NEC-2HCZ-6GCJ-2XGV-EDRPH&amp;
   currency=4923907272718555444
 </pre>
         <p><b>Response:</b>
@@ -3875,7 +3875,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Currency_Buy_.2F_Sell"><span class="mw-headline-number">14.2</span> Currency Buy / Sell</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=currencyBuy&amp;
   currency=6520756875632314476&amp;
   rateNQT=1500000000&amp;
@@ -3904,7 +3904,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "units": "200",
    "rateNQT": "1500000000"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 6,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -3926,7 +3926,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Currency_Mint"><span class="mw-headline-number">14.3</span> Currency Mint</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=currencyMint&amp;
   currency=9207767346829573996&amp;
   nonce=-6757092571753666960&amp;
@@ -3957,7 +3957,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.CurrencyMinting": 1,
    "nonce": "-6757092571753666960"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 7,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -3979,7 +3979,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Currency_Reserve_Claim"><span class="mw-headline-number">14.4</span> Currency Reserve Claim</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=currencyReserveClaim&amp;
   currency=15992040603642022742&amp;
   units=36
@@ -4003,7 +4003,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "currency": "15992040603642022742",
    "units": "36"
   },
-  "senderRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+  "senderRS": "NEC-BMUV-8QQR-47VK-CR7F3",
   "subtype": 2,
   "amountNQT": "0",
   "sender": "11580081983047651163",
@@ -4025,7 +4025,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Currency_Reserve_Increase"><span class="mw-headline-number">14.5</span> Currency Reserve Increase</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=currencyReserveIncrease&amp;
   currency=11847174313362984527
   amountPerUnitNQT=40000000
@@ -4049,7 +4049,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "currency": "11847174313362984527",
    "version.ReserveIncrease": 1
   },
-  "senderRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+  "senderRS": "NEC-BMUV-8QQR-47VK-CR7F3",
   "subtype": 1,
   "amountNQT": "0",
   "sender": "11580081983047651163",
@@ -4071,7 +4071,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Delete_Currency"><span class="mw-headline-number">14.6</span> Delete Currency</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=deleteCurrency&amp;
   currency=7103310507724273660&amp;
   secretPhrase=SECRETPHRASE&amp;
@@ -4096,7 +4096,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.CurrencyDeletion": 1,
    "currency": "7103310507724273660"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 8,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -4118,16 +4118,16 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Currencies"><span class="mw-headline-number">14.7</span> Get Account Currencies</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountCurrencies&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA
+  account=NEC-4VDY-LNVT-LMAY-FMCKA
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
  "accountCurrencies": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "code": "MYSTX",
    "unconfirmedUnits": "10000",
    "decimals": 2,
@@ -4147,9 +4147,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Currency_Count"><span class="mw-headline-number">14.8</span> Get Account Currency Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountCurrencyCount&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA
+  account=NEC-4VDY-LNVT-LMAY-FMCKA
 </pre>
         <p><b>Response:</b>
         </p>
@@ -4163,9 +4163,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Exchange_Requests"><span class="mw-headline-number">14.9</span> Get Account Exchange Requests</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountExchangeRequests&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA&amp;
+  account=NEC-4VDY-LNVT-LMAY-FMCKA&amp;
   currency=6520756875632314476
 </pre>
         <p><b>Response:</b>
@@ -4173,7 +4173,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "exchangeRequests": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "code": "MYSTX",
    "subtype": 6,
    "decimals": 2,
@@ -4195,7 +4195,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Funding_Monitor"><span class="mw-headline-number">14.10</span> Get Funding Monitor</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getFundingMonitor&amp;
  property=funding&amp;
  secretPhrase=IWontTellYou&amp;
@@ -4212,21 +4212,21 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "monitoredAccounts": [
     {
      "amount": "1000000000",
-     "accountRS": "NXT-5MYN-AP7M-NKMH-CRQJZ",
+     "accountRS": "NEC-5MYN-AP7M-NKMH-CRQJZ",
      "threshold": "15000000000",
      "interval": 10,
      "account": "12664921794733526996"
     },
     {
      "amount": "1000000000",
-     "accountRS": "NXT-G885-AKDX-5G2B-BLUCG",
+     "accountRS": "NEC-G885-AKDX-5G2B-BLUCG",
      "threshold": "15000000000",
      "interval": 10,
      "account": "10892890577210644675"
     }
    ],
    "holdingType": 0,
-   "accountRS": "NXT-7A48-47JL-T7LD-D5FS3",
+   "accountRS": "NEC-7A48-47JL-T7LD-D5FS3",
    "property": "funding",
    "threshold": "15000000000",
    "interval": 10,
@@ -4240,7 +4240,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Currencies"><span class="mw-headline-number">14.11</span> Get All Currencies</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllCurrencies&amp;
   firstIndex=2&amp;
   lastIndex=2
@@ -4267,7 +4267,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "type": 1,
    "reserveSupply": "0",
    "maxDifficulty": 0,
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "decimals": 2,
    "name": "MystcoinX",
    "numberOfExchanges": 12,
@@ -4284,7 +4284,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Exchanges"><span class="mw-headline-number">14.12</span> Get All Exchanges</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllExchanges&amp;
   firstIndex=7&amp;
   lastIndex=7
@@ -4294,17 +4294,17 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "exchanges": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "seller": "15295723609781267838",
    "code": "MYSTX",
-   "sellerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "sellerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "units": "5000",
    "issuanceHeight": 0,
    "type": 1,
    "rateNQT": "10000000",
    "buyer": "11580081983047651163",
    "offer": "17204924627068821879",
-   "buyerRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "buyerRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "decimals": 2,
    "name": "MystcoinX",
    "currency": "6520756875632314476",
@@ -4323,7 +4323,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Available_To_Buy"><span class="mw-headline-number">14.13</span> Get Available To Buy</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAvailableToBuy&amp;
   currency=4855695375693311301&amp;
   units=1
@@ -4342,7 +4342,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Buy_.2F_Sell_Offers"><span class="mw-headline-number">14.14</span> Get Buy / Sell Offers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getSellOffers&amp;
   currency=6520756875632314476
 </pre>
@@ -4353,7 +4353,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "offer": "4813417617929273983",
    "expirationHeight": 163125,
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "limit": "1000",
    "currency": "6520756875632314476",
    "supply": "500",
@@ -4370,7 +4370,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currencies"><span class="mw-headline-number">14.15</span> Get Currencies</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencies&amp;
   currencies=6520756875632314476
 </pre>
@@ -4396,7 +4396,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "type": 1,
    "reserveSupply": "0",
    "maxDifficulty": 0,
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "decimals": 2,
    "name": "MystcoinX",
    "numberOfExchanges": 12,
@@ -4413,9 +4413,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currencies_By_Issuer"><span class="mw-headline-number">14.16</span> Get Currencies By Issuer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrenciesByIssuer&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA
+  account=NEC-4VDY-LNVT-LMAY-FMCKA
 </pre>
         <p><b>Response:</b>
         </p>
@@ -4440,7 +4440,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "type": 1,
     "reserveSupply": "0",
     "maxDifficulty": 0,
-    "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+    "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
     "decimals": 2,
     "name": "MystcoinX",
     "numberOfExchanges": 12,
@@ -4458,7 +4458,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency"><span class="mw-headline-number">14.17</span> Get Currency</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrency&amp;
   code=MYSTX
 </pre>
@@ -4482,7 +4482,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "type": 1,
  "reserveSupply": "0",
  "maxDifficulty": 0,
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "decimals": 2,
  "name": "MystcoinX",
  "numberOfExchanges": 0,
@@ -4497,7 +4497,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency_Account_Count"><span class="mw-headline-number">14.18</span> Get Currency Account Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencyAccountCount&amp;
   currency=6520756875632314476
 </pre>
@@ -4513,7 +4513,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency_Accounts"><span class="mw-headline-number">14.19</span> Get Currency Accounts</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencyAccounts&amp;
   currency=6520756875632314476
 </pre>
@@ -4523,14 +4523,14 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "accountCurrencies": [
   {
    "unconfirmedUnits": "9000",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "currency": "6520756875632314476",
    "units": "9000",
    "account": "15295723609781267838"
   },
   {
    "unconfirmedUnits": "1000",
-   "accountRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "accountRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "currency": "6520756875632314476",
    "units": "1000",
    "account": "11580081983047651163"
@@ -4544,7 +4544,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency_Founders"><span class="mw-headline-number">14.20</span> Get Currency Founders</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencyFounders&amp;
   currency=16165836410580103964
 </pre>
@@ -4553,7 +4553,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "founders": [
   {
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "amountPerUnitNQT": "100000000",
    "currency": "16165836410580103964",
    "account": "15295723609781267838"
@@ -4567,7 +4567,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency_Ids"><span class="mw-headline-number">14.21</span> Get Currency Ids</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencyIds&amp;
   lastIndex=2
 </pre>
@@ -4587,7 +4587,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency_Transfers"><span class="mw-headline-number">14.22</span> Get Currency Transfers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencyTransfers&amp;
   currency=9387514940677621191
 </pre>
@@ -4596,15 +4596,15 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "transfers": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "code": "MYSTX",
    "units": "10",
    "issuanceHeight": 0,
    "type": 1,
    "transfer": "12208608533071682262",
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "sender": "15295723609781267838",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "decimals": 2,
    "recipient": "11580081983047651163",
    "name": "MystcoinX",
@@ -4622,7 +4622,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Exchanges"><span class="mw-headline-number">14.23</span> Get Exchanges</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getExchanges&amp;
   currency=6520756875632314476
 </pre>
@@ -4631,17 +4631,17 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "exchanges": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "seller": "15295723609781267838",
    "code": "MYSTX",
-   "sellerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "sellerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "units": "1",
    "issuanceHeight": 0,
    "type": 1,
    "rateNQT": "1500000000",
    "buyer": "11580081983047651163",
    "offer": "7762792906174207279",
-   "buyerRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "buyerRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "decimals": 2,
    "name": "MystcoinX",
    "currency": "6520756875632314476",
@@ -4660,7 +4660,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Exchanges_By_Exchange_Request"><span class="mw-headline-number">14.24</span> Get Exchanges By Exchange Request</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getExchangesByExchangeRequest&amp;
   transaction=12589829502215822061
 </pre>
@@ -4669,17 +4669,17 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "exchanges": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "seller": "15295723609781267838",
    "code": "MYSTX",
-   "sellerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "sellerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "units": "1",
    "issuanceHeight": 0,
    "type": 1,
    "rateNQT": "1500000000",
    "buyer": "11580081983047651163",
    "offer": "7762792906174207279",
-   "buyerRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "buyerRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "decimals": 2,
    "name": "MystcoinX",
    "currency": "6520756875632314476",
@@ -4698,7 +4698,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Exchanges_By_Offer"><span class="mw-headline-number">14.25</span> Get Exchanges By Offer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getExchangesByOffer&amp;
   offer=7762792906174207279
 </pre>
@@ -4707,17 +4707,17 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "exchanges": [
   {
-   "issuerAccountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "issuerAccountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "seller": "15295723609781267838",
    "code": "MYSTX",
-   "sellerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "sellerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "units": "1",
    "issuanceHeight": 0,
    "type": 1,
    "rateNQT": "1500000000",
    "buyer": "11580081983047651163",
    "offer": "7762792906174207279",
-   "buyerRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "buyerRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "decimals": 2,
    "name": "MystcoinX",
    "currency": "6520756875632314476",
@@ -4736,7 +4736,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Last_Exchanges"><span class="mw-headline-number">14.26</span> Get Last Exchanges</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getLastExchanges&amp;
   currencies=12366259387060174981
 </pre>
@@ -4747,8 +4747,8 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   {
    "offer": "1659323201112235372",
    "seller": "15295723609781267838",
-   "buyerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
-   "sellerRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "buyerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
+   "sellerRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "currency": "12366259387060174981",
    "block": "15911141024340031754",
    "units": "2",
@@ -4767,10 +4767,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Minting_Target"><span class="mw-headline-number">14.27</span> Get Minting Target</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getMintingTarget&amp;
   currency=9207767346829573996&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA&amp;
+  account=NEC-4VDY-LNVT-LMAY-FMCKA&amp;
   units=1
 </pre>
         <p><b>Response:</b>
@@ -4788,7 +4788,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Offer"><span class="mw-headline-number">14.28</span> Get Offer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getOffer&amp;
   offer=4813417617929273983
 </pre>
@@ -4798,7 +4798,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "sellOffer": {
   "offer": "4813417617929273983",
   "expirationHeight": 163125,
-  "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "limit": "1000",
   "currency": "6520756875632314476",
   "supply": "500",
@@ -4809,7 +4809,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "buyOffer": {
   "offer": "4813417617929273983",
   "expirationHeight": 163125,
-  "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "limit": "1000",
   "currency": "6520756875632314476",
   "supply": "500",
@@ -4825,7 +4825,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Issue_Currency"><span class="mw-headline-number">14.29</span> Issue Currency</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=issueCurrency&amp;
   name=MystcoinX&amp;
   code=MYSTX&amp;
@@ -4869,7 +4869,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "maxSupply": "10000",
    "algorithm": 0
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 0,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -4891,7 +4891,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Publish_Exchange_Offer"><span class="mw-headline-number">14.30</span> Publish Exchange Offer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=publishExchangeOffer&amp;
   currency=6520756875632314476&amp;
   buyRateNQT=10000000&amp;
@@ -4930,7 +4930,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "currency": "6520756875632314476",
    "initialBuySupply": "500"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 4,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -4951,7 +4951,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Search_Currencies"><span class="mw-headline-number">14.31</span> Search Currencies</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=searchCurrencies&amp;
   query=MYST?
 </pre>
@@ -4977,7 +4977,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "type": 1,
    "reserveSupply": "0",
    "maxDifficulty": 0,
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "decimals": 2,
    "name": "MystcoinX",
    "numberOfExchanges": 0,
@@ -4994,9 +4994,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Transfer_Currency"><span class="mw-headline-number">14.32</span> Transfer Currency</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=transferCurrency&amp;
-  recipient=NXT-BMUV-8QQR-47VK-CR7F3&amp;
+  recipient=NEC-BMUV-8QQR-47VK-CR7F3&amp;
   currency=9387514940677621191&amp;
   units=10
 </pre>
@@ -5019,11 +5019,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.CurrencyTransfer": 1,
    "units": "10"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 3,
   "amountNQT": "0",
   "sender": "15295723609781267838",
-  "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+  "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
   "recipient": "11580081983047651163",
   "ecBlockHeight": 159721,
   "deadline": 60,
@@ -5044,7 +5044,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Add_Peer"><span class="mw-headline-number">15.1</span> Add Peer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=addPeer&amp;
   peer=nxt9.webice.ru
 </pre>
@@ -5072,7 +5072,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Blacklist_API_Proxy_Peer"><span class="mw-headline-number">15.2</span> Blacklist API Proxy Peer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=blacklistAPIProxyPeer&amp;
   peer=52.0.72.67
 </pre>
@@ -5088,7 +5088,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Blacklist_Peer"><span class="mw-headline-number">15.3</span> Blacklist Peer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=blacklistPeer&amp;
   peer=nxt9.webice.ru
 </pre>
@@ -5104,7 +5104,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Inbound_Peers"><span class="mw-headline-number">15.4</span> Get Inbound Peers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getInboundPeers
 </pre>
         <p><b>Response:</b>
@@ -5119,7 +5119,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_My_Info"><span class="mw-headline-number">15.5</span> Get My Info</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getMyInfo
 </pre>
         <p><b>Response:</b>
@@ -5135,7 +5135,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Peer"><span class="mw-headline-number">15.6</span> Get Peer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPeer&amp;
   peer=nxtx.ru
 </pre>
@@ -5168,7 +5168,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Peers"><span class="mw-headline-number">15.7</span> Get Peers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPeers&amp;
   state=DISCONNECTED
 </pre>
@@ -5187,7 +5187,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Set_API_Proxy_Peer"><span class="mw-headline-number">15.8</span> Set API Proxy Peer</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=setAPIProxyPeer&amp;
   peer=163.172.154.74
 </pre>
@@ -5205,13 +5205,13 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   ],
  "requestProcessingTime":77,
  "version":"1.11.5",
- "platform":"NXT-TGFQ-U33C-C37U-CMKWF",
+ "platform":"NEC-TGFQ-U33C-C37U-CMKWF",
  "inboundWebSocket":false,
  "apiSSLPort":7878,
  "lastUpdated":112610887,
  "blacklisted":false,
  "announcedAddress":"104.223.53.14",
- "apiPort":7876,
+ "apiPort":6000,
  "application":"NRS",
  "port":7874,
  "outboundWebSocket":true,
@@ -5226,7 +5226,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Approve_Transaction"><span class="mw-headline-number">16.1</span> Approve Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=approveTransaction&amp;
   transactionFullHash=5016cc59b0665675f00513e8c647288e0a668a78c4964c84d0de8f768b89060a&amp;
   revealedSecretText=secret&amp;
@@ -5255,7 +5255,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.PhasingVoteCasting": 1,
    "revealedSecret": "736563726574"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 9,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -5278,9 +5278,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Create_Phasing_Poll"><span class="mw-headline-number">16.2</span> Create Phasing Poll</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=sendMoney&amp;
-  recipient=NXT-BMUV-8QQR-47VK-CR7F3&amp;
+  recipient=NEC-BMUV-8QQR-47VK-CR7F3&amp;
   secretPhrase=secretPhrase&amp;
   feeNQT=200000000&amp;
   deadline=60&amp;
@@ -5313,11 +5313,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.OrdinaryPayment": 0,
    "phasingVotingModel": 0
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 0,
   "amountNQT": "2000000000",
   "sender": "15295723609781267838",
-  "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+  "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
   "recipient": "11580081983047651163",
   "ecBlockHeight": 261454,
   "deadline": 60,
@@ -5338,7 +5338,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Phased_Transaction_Count"><span class="mw-headline-number">16.3</span> Get Account Phased Transaction Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountPhasedTransactionCount&amp;
   account=15295723609781267838
 </pre>
@@ -5354,7 +5354,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Phased_Transactions"><span class="mw-headline-number">16.4</span> Get Account Phased Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountPhasedTransactions&amp;
   account=15295723609781267838&amp;
   lastIndex=0
@@ -5381,12 +5381,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "version.OrdinaryPayment": 0,
     "phasingVotingModel": 2
    },
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "subtype": 0,
    "amountNQT": "500000000",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "block": "11015494088798322289",
-   "blockTimestamp": 43957876,
+   "blockTimestamp": 43956000,
    "deadline": 60,
    "timestamp": 43957682,
    "height": 262418,
@@ -5408,7 +5408,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Asset_Phased_Transactions"><span class="mw-headline-number">16.5</span> Get Asset Phased Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAssetPhasedTransactions&amp;
   asset=17091401215301664836
 </pre>
@@ -5434,12 +5434,12 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "version.OrdinaryPayment": 0,
     "phasingVotingModel": 2
    },
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "subtype": 0,
    "amountNQT": "500000000",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "block": "11015494088798322289",
-   "blockTimestamp": 43957876,
+   "blockTimestamp": 43956000,
    "deadline": 60,
    "timestamp": 43957682,
    "height": 262418,
@@ -5461,7 +5461,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Currency_Phased_Transactions"><span class="mw-headline-number">16.6</span> Get Currency Phased Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getCurrencyPhasedTransactions&amp;
   currency=12366259387060174981
 </pre>
@@ -5487,10 +5487,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "version.OrdinaryPayment": 0,
     "phasingVotingModel": 3
    },
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "subtype": 0,
    "amountNQT": "800000000",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "block": "699750272975612223",
    "blockTimestamp": 44042909,
    "deadline": 60,
@@ -5514,7 +5514,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Linked_Phased_Transactions"><span class="mw-headline-number">16.7</span> Get Linked Phased Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getLinkedPhasedTransactions&amp;
   linkedFullHash=083eba49bb481c38752a14493f0d40b3c60635935f13dd1fb33f6831fb997079
 </pre>
@@ -5546,10 +5546,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "version.OrdinaryPayment": 0,
     "phasingVotingModel": 4
    },
-   "senderRS": "NXT-7A48-47JL-T7LD-D5FS3",
+   "senderRS": "NEC-7A48-47JL-T7LD-D5FS3",
    "subtype": 0,
    "amountNQT": "500000000",
-   "recipientRS": "NXT-5MYN-AP7M-NKMH-CRQJZ",
+   "recipientRS": "NEC-5MYN-AP7M-NKMH-CRQJZ",
    "block": "13425992991123879393",
    "blockTimestamp": 80870662,
    "deadline": 1440,
@@ -5573,7 +5573,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Phasing_Poll"><span class="mw-headline-number">16.8</span> Get Phasing Poll</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPhasingPoll&amp;
   transaction=15402897900571339064
 </pre>
@@ -5586,11 +5586,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "finished": true,
  "whitelist": [
   {
-   "whitelistedRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "whitelistedRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "whitelisted": "11580081983047651163"
   },
   {
-   "whitelistedRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "whitelistedRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "whitelisted": "15295723609781267838"
   }
  ],
@@ -5598,7 +5598,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "result": "2",
  "approved": true,
  "minBalance": "0",
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "finishHeight": 259600,
  "minBalanceModel": 0,
  "transaction": "15402897900571339064",
@@ -5611,7 +5611,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Phasing_Poll_Vote"><span class="mw-headline-number">16.9</span> Get Phasing Poll Vote</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPhasingPollVote&amp;
   transaction=12580288379938056583&amp;
   account=15295723609781267838
@@ -5619,7 +5619,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <p><b>Response:</b>
         </p>
         <pre>{
- "voterRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "voterRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "voter": "15295723609781267838",
  "requestProcessingTime": 1,
  "transaction": "9761138556025135837"
@@ -5630,7 +5630,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Phasing_Poll_Votes"><span class="mw-headline-number">16.10</span> Get Phasing Poll Votes</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPhasingPollVotes&amp;
   account=12580288379938056583
 </pre>
@@ -5639,7 +5639,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "votes": [
   {
-   "voterRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "voterRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "voter": "15295723609781267838",
    "transaction": "9761138556025135837"
   }
@@ -5652,7 +5652,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Phasing_Polls"><span class="mw-headline-number">16.11</span> Get Phasing Polls</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPhasingPolls&amp;
   transaction=12580288379938056583&amp;
   transaction=13688769565509711077&amp;
@@ -5671,7 +5671,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "result": "186700000000",
    "approved": true,
    "minBalance": "10000000000",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "finishHeight": 262450,
    "minBalanceModel": 1,
    "transaction": "12580288379938056583",
@@ -5688,7 +5688,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "holding": "17091401215301664836",
    "approved": true,
    "minBalance": "100",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "finishHeight": 262450,
    "minBalanceModel": 2,
    "transaction": "13688769565509711077",
@@ -5704,7 +5704,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Voter_Phased_Transactions"><span class="mw-headline-number">16.12</span> Get Voter Phased Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getVoterPhasedTransactions&amp;
   account=15295723609781267838
 </pre>
@@ -5734,10 +5734,10 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "version.OrdinaryPayment": 0,
     "phasingVotingModel": 0
    },
-   "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "subtype": 0,
    "amountNQT": "1100000000",
-   "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+   "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
    "block": "16550954176569210781",
    "blockTimestamp": 44074579,
    "deadline": 1440,
@@ -5762,7 +5762,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Event_Register"><span class="mw-headline-number">17.1</span> Event Register</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=eventRegister
 </pre>
         <p><b>Response:</b>
@@ -5777,7 +5777,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Event_Wait"><span class="mw-headline-number">17.2</span> Event Wait</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=eventWait
 </pre>
         <p><b>Response:</b>
@@ -5809,7 +5809,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Blockchain_Status"><span class="mw-headline-number">17.3</span> Get Blockchain Status</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getBlockchainStatus
 </pre>
         <p><b>Response:</b>
@@ -5838,7 +5838,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Constants"><span class="mw-headline-number">17.4</span> Get Constants</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getConstants
 </pre>
         <p><b>Response:</b>
@@ -8689,7 +8689,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Plugins"><span class="mw-headline-number">17.5</span> Get Plugins</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPlugins
 </pre>
         <p><b>Response:</b>
@@ -8706,7 +8706,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_State"><span class="mw-headline-number">17.6</span> Get State</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getState
 </pre>
         <p><b>Response:</b>
@@ -8769,7 +8769,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Time"><span class="mw-headline-number">17.7</span> Get Time</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getTime
 </pre>
         <p><b>Response:</b>
@@ -8785,9 +8785,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Shufflings"><span class="mw-headline-number">18.1</span> Get Account Shufflings</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  getAccountShufflings&amp;
- account=NXT-UZNP-6LBA-YQ38-3TEY8
+ account=NEC-UZNP-6LBA-YQ38-3TEY8
 </pre>
         <p><b>Response:</b>
         </p>
@@ -8803,11 +8803,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "stage": 0,
    "holdingType": 0,
    "participantCount": 7,
-   "assigneeRS": "NXT-UZNP-6LBA-YQ38-3TEY8",
+   "assigneeRS": "NEC-UZNP-6LBA-YQ38-3TEY8",
    "shuffling": "5901270965262160574",
    "registrantCount": 2,
    "assignee": "1403321141259239061",
-   "issuerRS": "NXT-V4WY-U928-GRN8-CKPL9",
+   "issuerRS": "NEC-V4WY-U928-GRN8-CKPL9",
    "shufflingFullHash": "be12c737ad86e551621f57ebddaaaa61e66cf0a206fabfe40538304ff674c7a7"
   }
  ]
@@ -8818,7 +8818,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Shufflings"><span class="mw-headline-number">18.2</span> Get All Shufflings</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getAllShufflings
 </pre>
         <p><b>Response:</b>
@@ -8835,11 +8835,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "stage": 0,
    "holdingType": 0,
    "participantCount": 5,
-   "assigneeRS": "NXT-V4WY-U928-GRN8-CKPL9",
+   "assigneeRS": "NEC-V4WY-U928-GRN8-CKPL9",
    "shuffling": "2439058250271679131",
    "registrantCount": 3,
    "assignee": "11802441287912491934",
-   "issuerRS": "NXT-J52W-4BF7-L4J9-GEGMG",
+   "issuerRS": "NEC-J52W-4BF7-L4J9-GEGMG",
    "shufflingFullHash": "9be2ed518e46d921df9f9f6425cc16a399f72a7833c58dbeb2a261e04620c392"
   }
  ]
@@ -8850,9 +8850,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Assigned_Shufflings"><span class="mw-headline-number">18.3</span> Get Assigned Shufflings</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getAssignedShufflings&amp;
- account=NXT-V4WY-U928-GRN8-CKPL9
+ account=NEC-V4WY-U928-GRN8-CKPL9
 </pre>
         <p><b>Response:</b>
         </p>
@@ -8866,11 +8866,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "stage": 1,
  "holdingType": 0,
  "participantCount": 5,
- "assigneeRS": "NXT-V4WY-U928-GRN8-CKPL9",
+ "assigneeRS": "NEC-V4WY-U928-GRN8-CKPL9",
  "shuffling": "2439058250271679131",
  "registrantCount": 5,
  "assignee": "11802441287912491934",
- "issuerRS": "NXT-J52W-4BF7-L4J9-GEGMG",
+ "issuerRS": "NEC-J52W-4BF7-L4J9-GEGMG",
  "shufflingFullHash": "9be2ed518e46d921df9f9f6425cc16a399..."
 }
 </pre>
@@ -8879,7 +8879,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Holding_Shufflings"><span class="mw-headline-number">18.4</span> Get Holding Shufflings</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getHoldingShufflings&amp;
  holding=15344649963748848799&amp;
  includeFinished=true
@@ -8900,7 +8900,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "shuffling": "144176732027925694",
    "registrantCount": 1,
    "issuer": "17417706268123203912",
-   "issuerRS": "NXT-A4CA-L7JT-ZYGU-HZ2G5",
+   "issuerRS": "NEC-A4CA-L7JT-ZYGU-HZ2G5",
    "shufflingFullHash": "beb46651f937000259819298872f1721170a4c2e1af7f7900cb2ca01188fd942"
   }
  ]
@@ -8911,7 +8911,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Shufflers"><span class="mw-headline-number">18.5</span> Get Shufflers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getShufflers&amp;
  adminPassword=IWontTellYou
 </pre>
@@ -8920,8 +8920,8 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "shufflers": [
   {
-   "accountRS": "NXT-7A48-47JL-T7LD-D5FS3",
-   "recipientRS": "NXT-H42E-48UL-FM7A-AVEC2",
+   "accountRS": "NEC-7A48-47JL-T7LD-D5FS3",
+   "recipientRS": "NEC-H42E-48UL-FM7A-AVEC2",
    "recipient": "9235083011255928844",
    "shuffling": "9534657251385467319",
    "account": "12745647715474645062",
@@ -8936,7 +8936,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Shuffling"><span class="mw-headline-number">18.6</span> Get Shuffling</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getShuffling&amp;
  shuffling=3347171811359602131
 </pre>
@@ -8952,11 +8952,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "stage": 0,
  "holdingType": 0,
  "participantCount": 5,
- "assigneeRS": "NXT-V4WY-U928-GRN8-CKPL9",
+ "assigneeRS": "NEC-V4WY-U928-GRN8-CKPL9",
  "shuffling": "3347171811359602131",
  "registrantCount": 2,
  "assignee": "11802441287912491934",
- "issuerRS": "NXT-PFLP-BQHY-NG4J-BXG5C",
+ "issuerRS": "NEC-PFLP-BQHY-NG4J-BXG5C",
  "shufflingFullHash": "d3354a42078b732e16561b67a37d699d0410c564a4d18568319170665bf5dd9b"
 }
 </pre>
@@ -8965,7 +8965,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Shuffling_Participants"><span class="mw-headline-number">18.7</span> Get Shuffling Participants</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=getShufflingParticipants&amp;
  shuffling=16292433427943984172
 </pre>
@@ -8975,32 +8975,32 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "requestProcessingTime": 5,
  "participants": [
   {
-   "nextAccountRS": "NXT-KTTY-WRE6-2B5Y-4CYWR",
-   "accountRS": "NXT-3ZXY-KWR5-LR8V-2PYAT",
+   "nextAccountRS": "NEC-KTTY-WRE6-2B5Y-4CYWR",
+   "accountRS": "NEC-3ZXY-KWR5-LR8V-2PYAT",
    "shuffling": "16292433427943984172",
    "state": 2,
    "nextAccount": "3167098051496568638",
    "account": "910806360590974910"
   },
   {
-   "nextAccountRS": "NXT-L8VW-NRUG-LZ6Q-62WWW",
-   "accountRS": "NXT-KTTY-WRE6-2B5Y-4CYWR",
+   "nextAccountRS": "NEC-L8VW-NRUG-LZ6Q-62WWW",
+   "accountRS": "NEC-KTTY-WRE6-2B5Y-4CYWR",
    "shuffling": "16292433427943984172",
    "state": 2,
    "nextAccount": "5653003407546981244",
    "account": "3167098051496568638"
   },
   {
-   "nextAccountRS": "NXT-XC7L-35JW-FZCL-24NUT",
-   "accountRS": "NXT-L8VW-NRUG-LZ6Q-62WWW",
+   "nextAccountRS": "NEC-XC7L-35JW-FZCL-24NUT",
+   "accountRS": "NEC-L8VW-NRUG-LZ6Q-62WWW",
    "shuffling": "16292433427943984172",
    "state": 2,
    "nextAccount": "930699247665195186",
    "account": "5653003407546981244"
   },
   {
-   "nextAccountRS": "NXT-2222-2222-2222-22222",
-   "accountRS": "NXT-XC7L-35JW-FZCL-24NUT",
+   "nextAccountRS": "NEC-2222-2222-2222-22222",
+   "accountRS": "NEC-XC7L-35JW-FZCL-24NUT",
    "shuffling": "16292433427943984172",
    "state": 2,
    "nextAccount": "0",
@@ -9014,7 +9014,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Shuffling_Create"><span class="mw-headline-number">18.8</span> Shuffling Create</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=shufflingCreate&amp;
  amount=10000000000000&amp;
  participantCount=7&amp;
@@ -9046,7 +9046,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   "participantCount": 7,
   "version.ShufflingCreation": 1
  },
- "senderRS": "NXT-V4WY-U928-GRN8-CKPL9",
+ "senderRS": "NEC-V4WY-U928-GRN8-CKPL9",
  "subtype": 0,
  "amountNQT": "0",
  "sender": "11802441287912491934",
@@ -9064,7 +9064,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Shuffling_Process"><span class="mw-headline-number">18.9</span> Shuffling Process</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=shufflingProcess&amp;
  shuffling=12144660700617510957&amp;
  recipientSecretPhrase=IWontTellYou&amp;
@@ -9095,7 +9095,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "version.ShufflingProcessing": 1,
     "hash": "2e3cecabbf59a47d55399649be89d1bcd1b56264dca32cb269f88b30cbe2c262"
    },
-   "senderRS": "NXT-V4WY-U928-GRN8-CKPL9",
+   "senderRS": "NEC-V4WY-U928-GRN8-CKPL9",
    "subtype": 2,
    "amountNQT": "0",
    "sender": "11802441287912491934",
@@ -9113,7 +9113,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Shuffling_Verify"><span class="mw-headline-number">18.10</span> Shuffling Verify</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=shufflingVerify&amp;
  shuffling=12144660700617510957&amp;
  shufflingStateHash=90832470918374087102938470198234&amp;
@@ -9142,7 +9142,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   "shuffling": "12144660700617510957",
   "shufflingStateHash": "fbc8b99c99c4e09203f1237771e38c7ee484c18a72572c3d1adae04da858fe92"
  },
- "senderRS": "NXT-KHDF-9KSG-2UCY-BUQZ4",
+ "senderRS": "NEC-KHDF-9KSG-2UCY-BUQZ4",
  "subtype": 4,
  "amountNQT": "0",
  "sender": "10484056935692287341",
@@ -9160,7 +9160,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Shuffling_Register"><span class="mw-headline-number">18.11</span> Shuffling Register</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=shufflingRegister&amp;
  shufflingFullHash=2d10f4e18f808aa8d0de06d5cddcd77828eb6e7548f62e48de83f58fdf0629d5&amp;
  secretPhrase=IWontTellYou&amp;
@@ -9186,7 +9186,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   "version.ShufflingRegistration": 1,
   "shufflingFullHash": "2d10f4e18f808aa8d0de06d5cddcd77828eb6e7..."
  },
- "senderRS": "NXT-D78H-8QHV-DEP2-5TAGA",
+ "senderRS": "NEC-D78H-8QHV-DEP2-5TAGA",
  "subtype": 1,
  "amountNQT": "0",
  "sender": "3763066681748198607",
@@ -9204,7 +9204,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Start_Shuffler"><span class="mw-headline-number">18.12</span> Start Shuffler</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=startShuffler&amp;
  shufflingFullHash=2d10f4e18f808aa8d0de06d5cddcd77828eb6e7548f62e48de83f58fdf0629d5&amp;
  secretPhrase=IWontTellYou&amp;
@@ -9216,9 +9216,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "shuffling": "12144660700617510957",
  "shufflingFullHash": "2d10f4e18f808aa8d0de06d5cddcd77828eb6e7548f62e48de83f58fdf0629d5",
  "account": "11802441287912491934",
- "accountRS": "NXT-V4WY-U928-GRN8-CKPL9",
+ "accountRS": "NEC-V4WY-U928-GRN8-CKPL9",
  "recipient": "3763066681748198607",
- "recipientRS": "NXT-D78H-8QHV-DEP2-5TAGA",
+ "recipientRS": "NEC-D78H-8QHV-DEP2-5TAGA",
  "requestProcessingTime": 7
 }
 </pre>
@@ -9227,7 +9227,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Stop_Shuffler"><span class="mw-headline-number">18.13</span> Stop Shuffler</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
  requestType=stopShuffler&amp;
  shufflingFullHash=2d10f4e18f808aa8d0de06d5cddcd77828eb6e7548f62e48de83f58fdf0629d5&amp;
  secretPhrase=IWontTellYou
@@ -9245,7 +9245,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Download_Tagged_Data"><span class="mw-headline-number">19.1</span> Download Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=downloadTaggedData&amp;
   transaction=9169681701986886056
 </pre>
@@ -9258,7 +9258,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Extend_Tagged_Data"><span class="mw-headline-number">19.2</span> Extend Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=extendTaggedData&amp;
   transaction=9086193976300572942&amp;
   secretPhrase=secretPhrase&amp;
@@ -9291,7 +9291,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "isText": true,
    "tags": "video, scifi, torrent"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 1,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -9314,9 +9314,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Account_Tagged_Data"><span class="mw-headline-number">19.3</span> Get Account Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAccountTaggedData&amp;
-  account=NXT-4VDY-LNVT-LMAY-FMCKA&amp;
+  account=NEC-4VDY-LNVT-LMAY-FMCKA&amp;
   lastIndex=0
 </pre>
         <p><b>Response:</b>
@@ -9336,7 +9336,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "transactionTimestamp": 47843875,
    "tags": "video, scifi, torrent",
    "filename": "",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "name": "Stargate SG1 full series",
    "blockTimestamp": 47672045,
    "transaction": "9086193976300572942",
@@ -9352,7 +9352,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Tagged_Data"><span class="mw-headline-number">19.4</span> Get All Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllTaggedData&amp;
   lastIndex=0
 </pre>
@@ -9374,7 +9374,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "transactionTimestamp": 47843875,
    "tags": "video, scifi, torrent",
    "filename": "",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "name": "Stargate SG1 full series",
    "blockTimestamp": 47672045,
    "transaction": "9086193976300572942",
@@ -9389,7 +9389,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Channel_Tagged_Data"><span class="mw-headline-number">19.5</span> Get Channel Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getChannelTaggedData&amp;
   channel=torrent&amp;
   lastIndex=0
@@ -9411,7 +9411,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "transactionTimestamp": 47843875,
    "tags": "video, scifi, torrent",
    "filename": "",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "name": "Stargate SG1 full series",
    "blockTimestamp": 47672045,
    "transaction": "9086193976300572942",
@@ -9427,7 +9427,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Data_Tag_Count"><span class="mw-headline-number">19.6</span> Get Data Tag Count</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDataTagCount
 </pre>
         <p><b>Response:</b>
@@ -9442,7 +9442,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Data_Tags"><span class="mw-headline-number">19.7</span> Get Data Tags</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDataTags
 </pre>
         <p><b>Response:</b>
@@ -9470,7 +9470,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Data_Tags_Like"><span class="mw-headline-number">19.8</span> Get Data Tags Like</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getDataTagsLike&amp;
   tagPrefix=sci
 </pre>
@@ -9491,7 +9491,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Tagged_Data"><span class="mw-headline-number">19.9</span> Get Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getTaggedData&amp;
   transaction=9086193976300572942
 </pre>
@@ -9511,7 +9511,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "transactionTimestamp": 47843875,
  "tags": "video, scifi, torrent",
  "filename": "",
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "name": "Stargate SG1 full series",
  "blockTimestamp": 47672045,
  "transaction": "9086193976300572942",
@@ -9524,7 +9524,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Tagged_Data_Extend_Transactions"><span class="mw-headline-number">19.10</span> Get Tagged Data Extend Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getTaggedDataExtendTransactions&amp;
   transaction=4344513120863790923
 </pre>
@@ -9544,7 +9544,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
       "phased": false,
       "ecBlockId": "14132969248050944989",
       "signatureHash": "2ed7b6a5d579a66596409b2619375fa0edd54ace2e7d10f0bdbc0a7126f1776c",
-      "senderRS": "NXT-G885-AKDX-5G2B-BLUCG",
+      "senderRS": "NEC-G885-AKDX-5G2B-BLUCG",
       "subtype": 1,
       "amountNQT": "0",
       "sender": "10892890577210644675",
@@ -9565,7 +9565,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Search_Tagged_Data"><span class="mw-headline-number">19.11</span> Search Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=searchTaggedData&amp;
   query=SG?&amp;
   lastIndex=0
@@ -9587,7 +9587,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "transactionTimestamp": 47843875,
    "tags": "video, scifi, torrent",
    "filename": "",
-   "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+   "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
    "name": "Stargate SG1 full series",
    "blockTimestamp": 47672045,
    "transaction": "9086193976300572942",
@@ -9603,7 +9603,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Upload_Tagged_Data"><span class="mw-headline-number">19.12</span> Upload Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=uploadTaggedData&amp;
   data=d4f167249340d6d746f49441b8ccdb1bd3521feb&amp;
   name=Stargate SG1 full series&amp;
@@ -9640,7 +9640,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "hash": "06fbac5b5358c00f5a2f19789b06220dca4e242a851b70072633a06ae8e6fb46",
    "tags": "video, scifi, torrent"
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 0,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -9663,7 +9663,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Verify_Tagged_Data"><span class="mw-headline-number">19.13</span> Verify Tagged Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=verifyTaggedData&amp;
   transaction=9086193976300572942&amp;
   data=d4f167249340d6d746f49441b8ccdb1bd3521feb&amp;
@@ -9687,20 +9687,20 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Decode_File_Token"><span class="mw-headline-number">20.1</span> Decode File Token</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=decodeFileToken&amp;
   file=test.txt&amp;
   token=u8q9ps0gdoo2bl158p4llpar583ld0cgejat9qnrgrgde4l5uscgan7fu25hi...
 </pre>
         <p>The request is shown above in URL format for consistency. The actual request must be an HTTP POST request with a multipart content type. For example, the corresponding cURL command is as follows:
         </p>
-        <pre>curl -F requestType=generateFileToken -F file=@test.txt -F secretPhrase="secretPhrase" http://localhost:7876/nxt
+        <pre>curl -F requestType=generateFileToken -F file=@test.txt -F secretPhrase="secretPhrase" http://localhost:6000/nxt
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
 "valid": true,
-"accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+"accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
 "requestProcessingTime": 3,
 "account": "15295723609781267838",
 "timestamp": 49748229
@@ -9711,7 +9711,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Decode_Token"><span class="mw-headline-number">20.2</span> Decode Token</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=decodeToken&amp;
   website=test&amp;
   token=u8q9ps0gdoo2bl158p4llpar583ld0cgejat9qnrgrgde4l5ut8bgn...
@@ -9720,7 +9720,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         </p>
         <pre>{
  "valid": true,
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "requestProcessingTime": 2,
  "account": "15295723609781267838",
  "timestamp": 49762488
@@ -9731,20 +9731,20 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Generate_File_Token"><span class="mw-headline-number">20.3</span> Generate File Token</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=generateFileToken&amp;
   secretPhrase=secretPhrase&amp;
   file=test.txt
 </pre>
         <p>The request is shown above in URL format for consistency. The actual request must be an HTTP POST request with a multipart content type. For example, the corresponding cURL command is as follows:
         </p>
-        <pre>curl -F requestType=generateFileToken -F file=@test.txt -F secretPhrase="secretPhrase" http://localhost:7876/nxt
+        <pre>curl -F requestType=generateFileToken -F file=@test.txt -F secretPhrase="secretPhrase" http://localhost:6000/nxt
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
 "valid": true,
-"accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+"accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
 "requestProcessingTime": 4,
 "account": "15295723609781267838",
 "timestamp": 49748229,
@@ -9756,7 +9756,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Generate_Token"><span class="mw-headline-number">20.4</span> Generate Token</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=generateToken&amp;
   secretPhrase=secretPhrase&amp;
   website=test
@@ -9765,7 +9765,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         </p>
         <pre>{
  "valid": true,
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "requestProcessingTime": 4,
  "account": "15295723609781267838",
  "timestamp": 49762488,
@@ -9778,7 +9778,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Broadcast_Transaction"><span class="mw-headline-number">21.1</span> Broadcast Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=broadcastTransaction&amp;
   transactionBytes=001046aac6013c0057fb6f3a958e320bb49c4e81b4c2cf28b9f25d086c143...
 </pre>
@@ -9797,7 +9797,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Calculate_Full_Hash"><span class="mw-headline-number">21.2</span> Calculate Full Hash</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=calculateFullHash&amp;
   unsignedTransactionBytes=001046aac6013c0057fb6f3a958e320bb49c4e81b4c2cf28b9f2...&amp;
   signatureHash=b35eae7d2f01639810d37694138aa0a86fbbf8a9bf58c2be4f2a5b8f0f30b3f7
@@ -9814,9 +9814,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Expected_Transactions"><span class="mw-headline-number">21.3</span> Get Expected Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getExpectedTransactions&amp;
-  account=NXT-X5A4-FTMJ-J97M-F3ANH
+  account=NEC-X5A4-FTMJ-J97M-F3ANH
 </pre>
         <p><b>Response:</b>
         </p>
@@ -9838,7 +9838,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "asset": "8122396658538927693",
     "version.BidOrderPlacement": 1
    },
-   "senderRS": "NXT-X5A4-FTMJ-J97M-F3ANH",
+   "senderRS": "NEC-X5A4-FTMJ-J97M-F3ANH",
    "subtype": 3,
    "amountNQT": "0",
    "sender": "15551212561974070530",
@@ -9857,7 +9857,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Referencing_Transactions"><span class="mw-headline-number">21.4</span> Get Referencing Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getReferencingTransactions&amp;
   transaction=9132239833429154693
 </pre>
@@ -9885,7 +9885,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     "message": "],\"type\":\"payment\",\"oracles\":[{\"name\":\"nayru\"}]}",
     "version.ArbitraryMessage": 0
    },
-   "senderRS": "NXT-DRGK-5CLR-35AZ-84R5R",
+   "senderRS": "NEC-DRGK-5CLR-35AZ-84R5R",
    "subtype": 0,
    "amountNQT": "0",
    "sender": "7750380612824194513",
@@ -9905,7 +9905,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Transaction"><span class="mw-headline-number">21.5</span> Get Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getTransaction&amp;
   transaction=15200507403046301754
 </pre>
@@ -9923,11 +9923,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "version": 1,
  "ecBlockId": "17321329645912574173",
  "signatureHash": "b35eae7d2f01639810d37694138aa0a86fbbf8a9bf58c2be4f2a5b8f0f30b3f7",
- "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+ "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
  "subtype": 0,
  "amountNQT": "100000000",
  "sender": "15323192282528158131",
- "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+ "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
  "recipient": "17013046603665206934",
  "ecBlockHeight": 275727,
  "block": "8455642159445842600",
@@ -9943,7 +9943,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Transaction_Bytes"><span class="mw-headline-number">21.6</span> Get Transaction Bytes</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getTransactionBytes&amp;
   transaction=15200507403046301754
 </pre>
@@ -9961,7 +9961,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Parse_Transaction"><span class="mw-headline-number">21.7</span> Parse Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=parseTransaction&amp;
   transactionBytes=001046aac6013c0057fb6f3a958e320bb49c4e81b4c2cf28b9f25d086c143...
 </pre>
@@ -9977,11 +9977,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "version": 1,
  "ecBlockId": "17321329645912574173",
  "signatureHash": "b35eae7d2f01639810d37694138aa0a86fbbf8a9bf58c2be4f2a5b8f0f30b3f7",
- "senderRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+ "senderRS": "NEC-L6FM-89WK-VK8P-FCRBB",
  "subtype": 0,
  "amountNQT": "100000000",
  "sender": "15323192282528158131",
- "recipientRS": "NXT-4VNQ-RWZC-4WWQ-GVM8S",
+ "recipientRS": "NEC-4VNQ-RWZC-4WWQ-GVM8S",
  "recipient": "17013046603665206934",
  "ecBlockHeight": 275727,
  "verify": true,
@@ -9996,7 +9996,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Retrieve_Pruned_Transaction"><span class="mw-headline-number">21.8</span> Retrieve Pruned Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=retrievePrunedTransaction&amp;
   transaction=9343032000583494722
 </pre>
@@ -10027,7 +10027,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   "hash": "5fb2f476f2556d15e4d419c6ff10bdbd05a7c5284242eba67c4de1adaee185a2",
   "tags": "Darkwing Duck"
  },
- "senderRS": "NXT-K8HZ-VMMS-ZX8E-EY5JR",
+ "senderRS": "NEC-K8HZ-VMMS-ZX8E-EY5JR",
  "subtype": 0,
  "amountNQT": "0",
  "sender": "14681874272470211071",
@@ -10045,7 +10045,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Send_Transaction"><span class="mw-headline-number">21.9</span> Send Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=sendTransaction&amp;
   transactionBytes=00109e61b606a0052bdd59320496b133052f58c82e8...
 </pre>
@@ -10062,7 +10062,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Sign_Transaction"><span class="mw-headline-number">21.10</span> Sign Transaction</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=signTransaction&amp;
   unsignedTransactionBytes=00100cfb3c03a00510f09c34f225d425306e5be55a494690...&amp;
   secretPhrase=SecretPhrase
@@ -10084,11 +10084,11 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
   "attachment": {
    "version.OrdinaryPayment": 0
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 0,
   "amountNQT": "1000000000",
   "sender": "15295723609781267838",
-  "recipientRS": "NXT-BMUV-8QQR-47VK-CR7F3",
+  "recipientRS": "NEC-BMUV-8QQR-47VK-CR7F3",
   "recipient": "11580081983047651163",
   "ecBlockHeight": 382777,
   "deadline": 1440,
@@ -10109,7 +10109,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Cast_Vote"><span class="mw-headline-number">22.1</span> Cast Vote</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=castVote&amp;
   poll=5916389507928675673&amp;
   vote02=1&amp;
@@ -10140,7 +10140,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
     1
    ]
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 3,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -10163,7 +10163,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Create_Poll"><span class="mw-headline-number">22.2</span> Create Poll</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=createPoll&amp;
   name=Gender Poll&amp;
   description=What is your gender?&amp;
@@ -10211,7 +10211,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "version.PollCreation": 1,
    "maxRangeValue": 1
   },
-  "senderRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+  "senderRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
   "subtype": 2,
   "amountNQT": "0",
   "sender": "15295723609781267838",
@@ -10234,7 +10234,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Poll"><span class="mw-headline-number">22.3</span> Get Poll</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPoll&amp;
   poll=9096010195498999548
 </pre>
@@ -10249,7 +10249,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
  "requestProcessingTime": 1,
  "minNumberOfOptions": 1,
  "minBalance": "100000000000",
- "accountRS": "NXT-4VDY-LNVT-LMAY-FMCKA",
+ "accountRS": "NEC-4VDY-LNVT-LMAY-FMCKA",
  "name": "Gender Poll",
  "options": [
   "Male",
@@ -10267,7 +10267,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Poll_Result"><span class="mw-headline-number">22.4</span> Get Poll Result</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPollResult&amp;
   poll=16742897359122764363
 </pre>
@@ -10306,14 +10306,14 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Poll_Vote"><span class="mw-headline-number">22.5</span> Get Poll Vote</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPollVote&amp;
   account=9096010195498999548
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
- "voterRS": "NXT-THLJ-CYAL-JQST-6FNS5",
+ "voterRS": "NEC-THLJ-CYAL-JQST-6FNS5",
  "votes": [
   "1",
   ""
@@ -10328,7 +10328,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Poll_Votes"><span class="mw-headline-number">22.6</span> Get Poll Votes</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPollVotes&amp;
   poll=9096010195498999548&amp;
   lastIndex=0
@@ -10338,7 +10338,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <pre>{
  "votes": [
   {
-   "voterRS": "NXT-THLJ-CYAL-JQST-6FNS5",
+   "voterRS": "NEC-THLJ-CYAL-JQST-6FNS5",
    "votes": [
     "1",
     ""
@@ -10355,7 +10355,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Polls"><span class="mw-headline-number">22.7</span> Get Polls</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getPolls&amp;
   lastIndex=0
 </pre>
@@ -10372,7 +10372,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "minNumberOfOptions": 1,
    "holding": "415923435949896799",
    "minBalance": "1000000000",
-   "accountRS": "NXT-3BCV-8Q5G-9NP6-576DP",
+   "accountRS": "NEC-3BCV-8Q5G-9NP6-576DP",
    "name": "CRDTS owners poll",
    "options": [
     "Yes",
@@ -10394,7 +10394,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Search_Polls"><span class="mw-headline-number">22.8</span> Search Polls</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=searchPolls&amp;
   query=hello&amp;
   includeFinished=true
@@ -10411,7 +10411,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "poll": "3043888702585899321",
    "minNumberOfOptions": 1,
    "minBalance": "0",
-   "accountRS": "NXT-XK4R-7VJU-6EQG-7R335",
+   "accountRS": "NEC-XK4R-7VJU-6EQG-7R335",
    "name": "Poll1",
    "options": [
     "Hello",
@@ -10433,14 +10433,14 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Decode_QR_Code"><span class="mw-headline-number">23.1</span> Decode QR Code</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=decodeQRCode&amp;
   qrCodeBase64=/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRo...
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
-    "qrCodeData": "NXT-7A48-47JL-T7LD-D5FS3",
+    "qrCodeData": "NEC-7A48-47JL-T7LD-D5FS3",
     "requestProcessingTime": 15
 }
 </pre>
@@ -10451,7 +10451,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Detect_Mime_Type"><span class="mw-headline-number">23.2</span> Detect Mime Type</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=detectMimeType&amp;
   data=/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRo...&amp;
   isText=false
@@ -10467,9 +10467,9 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Encode_QR_Code"><span class="mw-headline-number">23.3</span> Encode QR Code</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=encodeQRCode&amp;
-  qrCodeData=NXT-7A48-47JL-T7LD-D5FS3&amp;
+  qrCodeData=NEC-7A48-47JL-T7LD-D5FS3&amp;
   width=100&amp;
   height=100
 </pre>
@@ -10485,7 +10485,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Full_Hash_To_Id"><span class="mw-headline-number">23.4</span> Full Hash To Id</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=fullHashToId&amp;
   fullHash=c34af8f1509e3be79c4562e24125ff2a8f026871fdd1a0366ad315bf8fab76b9
 </pre>
@@ -10502,7 +10502,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Hash"><span class="mw-headline-number">23.5</span> Hash</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=hash&amp;
   hashAlgorithm=2&amp;
   secret=74657374
@@ -10521,7 +10521,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Hex_Convert"><span class="mw-headline-number">23.6</span> Hex Convert</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=hexConvert&amp;
   string=616263
 </pre>
@@ -10538,7 +10538,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Long_Convert"><span class="mw-headline-number">23.7</span> Long Convert</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=longConvert&amp;
   id=15323192282528158131
 </pre>
@@ -10555,14 +10555,14 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="RS_Convert"><span class="mw-headline-number">23.8</span> RS Convert</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=rsConvert&amp;
-  account=NXT-L6FM-89WK-VK8P-FCRBB
+  account=NEC-L6FM-89WK-VK8P-FCRBB
 </pre>
         <p><b>Response:</b>
         </p>
         <pre>{
- "accountRS": "NXT-L6FM-89WK-VK8P-FCRBB",
+ "accountRS": "NEC-L6FM-89WK-VK8P-FCRBB",
  "requestProcessingTime": 1,
  "account": "15323192282528158131"
 }
@@ -10573,7 +10573,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Clear_Unconfirmed_Transactions"><span class="mw-headline-number">24.1</span> Clear Unconfirmed Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=clearUnconfirmedTransactions
 </pre>
         <p><b>Response:</b>
@@ -10588,7 +10588,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Dump_Peers"><span class="mw-headline-number">24.2</span> Dump Peers</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=dumpPeers&amp;
   version=1.5.11&amp;
   connect=true
@@ -10606,7 +10606,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Full_Reset"><span class="mw-headline-number">24.3</span> Full Reset</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=fullReset
 </pre>
         <p><b>Response:</b>
@@ -10621,7 +10621,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Broadcasted_Transactions"><span class="mw-headline-number">24.4</span> Get All Broadcasted Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=GetAllBroadcastedTransactions
 </pre>
         <p><b>Response:</b>
@@ -10636,7 +10636,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_All_Waiting_Transactions"><span class="mw-headline-number">24.5</span> Get All Waiting Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getAllWaitingTransactions
 </pre>
         <p><b>Response:</b>
@@ -10651,7 +10651,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Log"><span class="mw-headline-number">24.6</span> Get Log</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getLog&amp;
   count=3
 </pre>
@@ -10671,7 +10671,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Get_Stack_Traces"><span class="mw-headline-number">24.7</span> Get Stack Traces</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=getStackTrace
 </pre>
         <p><b>Response:</b>
@@ -10699,7 +10699,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Lucene_Reindex"><span class="mw-headline-number">24.8</span> Lucene Reindex</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=luceneReindex
 </pre>
         <p><b>Response:</b>
@@ -10714,7 +10714,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Pop_Off"><span class="mw-headline-number">24.9</span> Pop Off</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=popOff&amp;
   numBlocks=1
 </pre>
@@ -10731,7 +10731,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
    "generatorPublicKey": "f35600023d42e79cbf0518a174141bce1decb13332e397553c3f62df7261414a",
    "baseTarget": "268653798",
    "payloadHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "generatorRS": "NXT-A6NF-JE4R-XB6L-FAUFZ",
+   "generatorRS": "NEC-A6NF-JE4R-XB6L-FAUFZ",
    "nextBlock": "12812496435932308379",
    "numberOfTransactions": 0,
    "blockSignature": "d9aba136c708e4f84b7ae1cf0415b25a75f9eefc8a47b1963b237ada9982a...",
@@ -10752,7 +10752,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Rebroadcast_Unconfirmed_Transactions"><span class="mw-headline-number">24.10</span> Rebroadcast Unconfirmed Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=RebroadcastUnconfirmedTransactions
 </pre>
         <p><b>Response:</b>
@@ -10767,7 +10767,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Requeue_Unconfirmed_Transactions"><span class="mw-headline-number">24.11</span> Requeue Unconfirmed Transactions</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=requeueUnconfirmedTransactions
 </pre>
         <p><b>Response:</b>
@@ -10782,7 +10782,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Retrieve_Pruned_Data"><span class="mw-headline-number">24.12</span> Retrieve Pruned Data</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=retrievePrunedData
 </pre>
         <p><b>Response:</b>
@@ -10798,7 +10798,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Scan"><span class="mw-headline-number">24.13</span> Scan</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=scan
 </pre>
         <p><b>Response:</b>
@@ -10814,7 +10814,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Set_Logging"><span class="mw-headline-number">24.14</span> Set Logging</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=setLogging
 </pre>
         <p><b>Response:</b>
@@ -10828,7 +10828,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Shutdown"><span class="mw-headline-number">24.15</span> Shutdown</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=shutdown
 </pre>
         <p><b>Response:</b>
@@ -10843,7 +10843,7 @@ NXT-EZQ9-35P5-XZ8C-4LW87&amp;feeNQT=100000000&amp;deadline=60
         <h3><span class="mw-headline" id="Trim_Derived_Tables"><span class="mw-headline-number">24.16</span> Trim Derived Tables</span></h3>
         <p><b>Request:</b>
         </p>
-        <pre>http://localhost:7876/nxt?
+        <pre>http://localhost:6000/nxt?
   requestType=trimDerivedTables
 </pre>
         <p><b>Response:</b>

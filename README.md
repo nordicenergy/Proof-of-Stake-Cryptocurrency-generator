@@ -1,4 +1,4 @@
-# Proof-of-Stake-Cryptocurrency-generator
+# Proof-of-Stake-Cryptocurrency-generator ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/coin_generator)
 Create your own Proof of Stake cryptocurrency with its own blockchain based on "Nxt Blockchain Creation Kit".
 It should satisfy the requirements of the Jelurida Public License version 1.1 for the Nxt Public Blockchain Platform.
 Basically 10% of your tokens should be given to the owners of the Nxt Cryptocurrency. Furthermore, the source needs to be disclosed and under the same license. Keep in mind that this generator is not perfect!
@@ -12,7 +12,7 @@ If you are an advanced user follow directly the official tutorial:
 
 ## What are the Cryptocurrency built with this generator?
 
-* GTD - https://gtd.network
+* Motive - https://motive.network
 
 ## Requirements
 * Java
@@ -26,6 +26,9 @@ If you are an advanced user follow directly the official tutorial:
 
 ### How to install NodeJS
 * General - https://nodejs.org/en/download/
+
+## Video tutorial
+* [Create your blockchain with that cryptocurrency](https://www.youtube.com/watch?v=_Ww5IZZB0WY) (French with English Subtitle)
 
 ## Step 1 - Download the Nxt blockchain and create the genesis block
 1. Clone this repository with `git clone https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator`, also feel free to fork this repository!
@@ -49,7 +52,7 @@ If you are an advanced user follow directly the official tutorial:
 
 ## Step 2 - Create your own Cryptocurrency
 1. Update the images from `templates/img` according to your blockchain images and the favicon in `templates`
-2. Then just run `npm run generate` and answer the generator's questions. The generator will automatically clone the nxt-clone-starter, change the port and name in the source code.
+2. Then just run `npm run generate` and answer the generator's questions. The generator will automatically clone the nxt-clone-starter, change the port and name in the source code. For Windows user you should use `npm run generate:docker` and have docker installed.
 3. Once the cryptocurrency generated you can of course edit the interface inside the `<yourCrypto>/html` folder and find the java source in `<yourCrypto>/src/java`, note that you can find many parameters that you can edit in the following file `<yourCrypto>/src/java/nxt/Constants.java`
 4. Run it ! Go to `<yourCrypto>` folder compile with  `sh ./compile.sh` (or win-compile.sh for Windows) then run with `sh ./run.sh` (or run.bat for windows). Note that you can delete all the other folders they are now useless. Also you need to start forging yourself if you want to try to make transactions.
 5. Find the API doc in the `doc` folder
@@ -70,13 +73,27 @@ If the command line to launch forging does not work you can do it with the GUI a
 * https://medium.com/@Arafat./graphical-user-interface-using-vnc-with-amazon-ec2-instances-549d9c0969c5
 * https://www.digitalocean.com/community/tutorials/how-to-set-up-vnc-server-on-debian-8
 
+## Troubleshooting
+### Mac & Linux
+* If step 1 doesn't work go to the `nxt` folder and run `sh ./compile.sh` then `sh ./run.sh`
+### Windows
+* If step 1 doesn't work go to the `nxt` folder and run `sh ./win-compile.sh` then open `run.bat`
+* For step 2 you need to use Docker, so first install docker and then run `npm run generate:docker` or `docker run -it --rm --name coin-generator -v "$PWD":/usr/src/app -w /usr/src/app node:8 npm run generate`
+### All OS
+* Sometime when running the wallet it's not logging in, open the wallet url in private navigation
+
 ## What is next?
 * You can find the source of the mobile app in the `mobile` folder
+
+## ⭐️ Show your support
+Please ⭐️ this repository if this project helped you!
+
+<a href="https://www.patreon.com/sandoche">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sandoche)</a>
 
 ## Buy me a beer
 If you like this project, feel free to donate:
 * Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
 * Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
 * Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
-* GTD: GTD-25T5-SD65-V7LJ-BBWRD (Get GTD Now: https://gtd.network)
+* Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)
 * Paypal: https://www.paypal.me/kanbanote

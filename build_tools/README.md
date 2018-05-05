@@ -1,9 +1,9 @@
 ----
-# Welcome to Nxt! #
+# Welcome to NEC! #
 
 ----
-## What is Nxt? ##
-Nxt is a cryptocurrency to make the world a better place.
+## What is NEC? ##
+NEC is a cryptocurrency to make the world a better place.
 
 ----
 ## Get it! ##
@@ -17,12 +17,12 @@ Nxt is a cryptocurrency to make the world a better place.
 ----
 ## Run it! ##
 
-  - click on the Nxt icon, or start from the command line:
+  - click on the NEC icon, or start from the command line:
   - Unix: `./start.sh`
   - Window: `run.bat`
 
   - wait for the JavaFX wallet window to open
-  - on platforms without JavaFX, open http://localhost:7876/ in a browser
+  - on platforms without JavaFX, open http://localhost:6000/ in a browser
 
 ----
 ## Compile it! ##
@@ -31,10 +31,10 @@ Nxt is a cryptocurrency to make the world a better place.
   - you need jdk-8 as well
 
 ----
-## Troubleshooting the NRS (Nxt Reference Software) ##
+## Troubleshooting the NRS (NEC Reference Software) ##
 
   - How to Stop the NRS Server?
-    - click on Nxt Stop icon, or run `./stop.sh`
+    - click on NEC Stop icon, or run `./stop.sh`
     - or if started from command line, ctrl+c or close the console window
 
   - UI Errors or Stacktraces?

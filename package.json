@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "nxt": "cd nxt ; sh ./compile.sh ; sh ./run.sh",
-    "generate": "node index.js"
+    "generate": "node index.js",
+    "generate:docker": "sudo docker run -it --rm --name coin-generator -v \"$PWD\":/usr/src/app -w /usr/src/app node:8 npm run generate"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator.git"
+    "url": "git+https://https://github.com/nordicenergy/proof-of-stake-cryptocurrency-generator.git"
   },
   "keywords": [
     "pos",
@@ -21,12 +22,12 @@
     "blockchain",
     "coin"
   ],
-  "author": "Sandoche ADITTANE",
+  "author": "Nordic Energy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator/issues"
+    "url": "https://https://github.com/nordicenergy/proof-of-stake-cryptocurrency-generator/issues"
   },
-  "homepage": "https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator#readme",
+  "homepage": "https://github.com/nordicenergy/proof-of-stake-cryptocurrency-generator#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
     "inquirer": "^5.1.0",

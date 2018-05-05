@@ -4,9 +4,9 @@
         <property file="conf/nxt-default.properties" prefix="runtime"/>
     </properties>
     <info>
-        <appname>NXT</appname>
+        <appname>NordicEnergy</appname>
         <appversion>@{runtime.nxt.version}</appversion>
-        <url>https://nxt.org</url>
+        <url>https://network.nordicenergy.io</url>
         <run-privileged condition="izpack.windowsinstall"/>
     </info>
 
@@ -94,7 +94,7 @@
     <variables>
         <variable name="$InstallerFrame.logfilePath" value="default"/>
         <variable name="DesktopShortcutCheckboxEnabled" value="true"/>
-        <variable name="TargetPanel.dir.mac" value="/Applications/nxt.app"/>
+        <variable name="TargetPanel.dir.mac" value="/Applications/NordicEnergy.app"/>
     </variables>
 
     <panels>
@@ -110,7 +110,7 @@
     <packs>
         <pack name="server" required="yes">
             <description>Common Server Files</description>
-            <file src="nxt.jar" targetdir="${INSTALL_PATH}" override="true"/>
+            <file src="NordicEnergy.jar" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="README.txt" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="Wallet.url" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="3RD-PARTY-LICENSES.txt" targetdir="${INSTALL_PATH}" override="true"/>
@@ -147,9 +147,9 @@
         <pack name="server.windows" os="windows" required="yes">
             <description>Windows Specific Resources</description>
             <os family="windows"/>
-            <file src="nxt.exe" targetdir="${INSTALL_PATH}" override="true"/>
-            <file src="nxtservice.exe" targetdir="${INSTALL_PATH}" override="true"/>
-            <file src="nxtservice.jar" targetdir="${INSTALL_PATH}" override="true"/>
+            <file src="NordicEnergy.exe" targetdir="${INSTALL_PATH}" override="true"/>
+            <file src="NordicEnergyservice.exe" targetdir="${INSTALL_PATH}" override="true"/>
+            <file src="NordicEnergyservice.jar" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="run.bat" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="mint.bat" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="compact.bat" targetdir="${INSTALL_PATH}" override="true"/>
@@ -194,7 +194,7 @@
         <pack name="server.mac" os="mac_osx" required="yes" uninstall="false">
             <description>Mac Specific Resources</description>
             <fileset dir="resource/mac/Contents" targetdir="${INSTALL_PATH}/Contents" override="true"/>
-			<parsable targetfile="${INSTALL_PATH}/Contents/MacOS/nxt"/>
+			<parsable targetfile="${INSTALL_PATH}/Contents/MacOS/NEC"/>
 			<executable targetfile="${INSTALL_PATH}/Contents/MacOS/nxt"/>
 		</pack>
 
