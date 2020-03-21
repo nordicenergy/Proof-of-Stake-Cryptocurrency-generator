@@ -1,5 +1,5 @@
-# Proof-of-Stake-Cryptocurrency-generator ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/coin_generator)
-Create your own Proof of Stake cryptocurrency with its own blockchain based on "Nxt Blockchain Creation Kit".
+# Proof-of-Stake-Cryptocurrency-generator ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/nordicenergy_generator)
+Noedic Energy Proof of Stake cryptocurrency with its own blockchain based on "Nxt Blockchain Creation Kit".
 It should satisfy the requirements of the Jelurida Public License version 1.1 for the Nxt Public Blockchain Platform.
 Basically 10% of your tokens should be given to the owners of the Nxt Cryptocurrency. Furthermore, the source needs to be disclosed and under the same license. Keep in mind that this generator is not perfect!
 * Website: https://coingenerator.sh
@@ -10,9 +10,6 @@ If you are an advanced user follow directly the official tutorial:
 * Nxt-clone-starter: https://bitbucket.org/Jelurida/nxt-clone-starter
 * Introduction to the NXT Blockchain Creation Kit: https://www.youtube.com/watch?v=6Wg3uv07GU4
 
-## What are the Cryptocurrency built with this generator?
-
-* Motive - https://motive.network
 
 ## Requirements
 * Java
@@ -31,7 +28,7 @@ If you are an advanced user follow directly the official tutorial:
 * [Create your blockchain with that cryptocurrency](https://www.youtube.com/watch?v=_Ww5IZZB0WY) (French with English Subtitle)
 
 ## Step 1 - Download the Nxt blockchain and create the genesis block
-1. Clone this repository with `git clone https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator`, also feel free to fork this repository!
+1. Clone this repository with `git clone https://github.com/nordicenergy/åroof-of-stake-cryptocurrency-generator`, also feel free to fork this repository!
 2. Go to the cloned folder and install the npm dependencies with `npm install`
 3. Run the Nxt Blockchain with `npm run nxt`
 4. Then open http://localhost:7876/index.html in your favourite browser. Then create an account and save the private keys securely, wait until the full blockchain is synced, this can take a few hours. Copy your nxt address and also its public key.
@@ -85,15 +82,3 @@ If the command line to launch forging does not work you can do it with the GUI a
 ## What is next?
 * You can find the source of the mobile app in the `mobile` folder
 
-## ⭐️ Show your support
-Please ⭐️ this repository if this project helped you!
-
-<a href="https://www.patreon.com/sandoche">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sandoche)</a>
-
-## Buy me a beer
-If you like this project, feel free to donate:
-* Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
-* Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
-* Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
-* Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)
-* Paypal: https://www.paypal.me/kanbanote
