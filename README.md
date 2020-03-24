@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/nordicenergy/proof-of-stake-cryptocurrency-generator) 
+
 # Proof of Stake Cryptocurrency generator ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/nordicenergy_generator)
 Noedic Energy Proof of Stake cryptocurrency with its own blockchain based on "Nxt Blockchain Creation Kit".
 It should satisfy the requirements of the Jelurida Public License version 1.1 for the Nxt Public Blockchain Platform.
