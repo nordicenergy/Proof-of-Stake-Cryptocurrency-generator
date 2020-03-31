@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -206,7 +206,7 @@ function NxtAddress() {
 		}
 
 		this.guess[len] = s;
-	} //__________________________
+	}; //__________________________
 
 	this.ok = function() {
 		var sum = 0;
@@ -226,7 +226,7 @@ function NxtAddress() {
 		}
 
 		return (sum == 0);
-	} //__________________________
+	}; //__________________________
 
 	function from_acc(acc) {
 		var inp = [],
@@ -281,7 +281,7 @@ function NxtAddress() {
 		}
 
 		return out;
-	} //__________________________
+	}; //__________________________
 
 	this.account_id = function() {
 		var out = '',
@@ -314,7 +314,7 @@ function NxtAddress() {
 		while (newlen);
 
 		return out.split("").reverse().join("");
-	} //__________________________
+	}; //__________________________
 
 	this.set = function(adr, allow_accounts) {
 		if (typeof allow_accounts === 'undefined') allow_accounts = true;
@@ -385,7 +385,7 @@ function NxtAddress() {
 		reset();
 
 		return false;
-	}
+	};
 
 	this.format_guess = function(s, org) {
 		var d = '',

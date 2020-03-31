@@ -1,6 +1,6 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~ Copyright © 2013-2016 The Nxt Core Developers.                            ~
-  ~ Copyright © 2016-2018 Jelurida IP B.V.                                    ~
+  ~ Copyright © 2016-2020 Jelurida IP B.V.                                    ~
   ~                                                                           ~
   ~ See the LICENSE.txt file at the top-level directory of this distribution  ~
   ~ for licensing information.                                                ~
@@ -22,7 +22,7 @@
                 <!-- todo -->
                 <h4 class="modal-title"><span data-i18n="confirm_order">Confirm Order</span> (<span class="asset_order_modal_type"></span>)</h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
                     <div class="form-group">
@@ -64,7 +64,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="transfer_asset_title"></h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
                     <div class="form-group">
@@ -116,7 +116,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" data-i18n="confirm_order_cancellation">Confirm Order Cancellation</h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
                     <p data-i18n="confirm_order_cancellation_help">If you are sure you want to cancel your order, type your passphrase to confirm.</p>
@@ -150,7 +150,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" data-i18n="add_asset">Add Asset</h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
                     <div class="form-group">
@@ -175,7 +175,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" data-i18n="issue_asset">Issue Asset</h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger never_hide">
                         <strong><span data-i18n="warning">Warning</span>:</strong>
@@ -236,7 +236,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" data-i18n="Asset Distribution">Asset Distribution</h4>
             </div>
-            <div class="modal-body">                            
+            <div class="modal-body">
                 <div class="data-container data-loading" style="max-height:350px;overflow:auto">
                     <table class="table table-striped" id="asset_distribution_table">
                         <thead>
@@ -280,6 +280,7 @@
                                         <th class='numeric'>{{i18n "total"}}</th>
                                         <th class='numeric'>{{i18n "accounts"}}</th>
                                         <th class='numeric'>{{i18n "amount_per_share"}}</th>
+                                        <th class='numeric'>{{i18n "holding"}}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -290,6 +291,7 @@
                                         <td class='numeric'>{{{total}}}</td>
                                         <td class='numeric'>{{{accounts}}}</td>
                                         <td class='numeric'>{{{amount_per_share}}}</td>
+                                        <td class='numeric'>{{{holding}}}</td>
                                     </tr>
                                     {{/each}}
                                     </tbody>
@@ -318,7 +320,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" data-i18n="change_group_name">Change Group Name</h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
                     <p data-i18n="change_group_name_help">Type a new group name.</p>
@@ -349,7 +351,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" data-i18n="group_asset">Group Asset</h4>
             </div>
-            <div class="modal-body">            
+            <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
                     <p data-i18n="group_asset_help">Choose a group for this asset.</p>
@@ -387,20 +389,34 @@
             <div class="modal-body">
                 <form role="form" autocomplete="off">
                     <div class="callout callout-danger error_message" style="display:none"></div>
+                    <div class="form-group">
+                        <label data-18n="holding_type" for="dividend_payment_holding_type">Holding Type</label>
+                        <select class="form-control" data-default="0" id="dividend_payment_holding_type" name="holdingType" tabindex="1">
+                            <option data-i18n="nxt_capital_letters" selected value="0">NXT</option>
+                            <option data-i18n="asset" value="1">Asset</option>
+                            <option data-i18n="currency" value="2">Currency</option>
+                        </select>
+                    </div>
+                    <div aria-hidden="true" class="col-xs-12 col-sm-12 col-md-12" id="dividend_payment_asset_id_group" style="display: none;">
+                        <div class="form-group dividend_payment_holding_asset" data-modal-ui-element="add_asset_modal_ui_element"></div>
+                    </div>
+                    <div aria-hidden="true" class="col-xs-12 col-sm-12 col-md-12" id="dividend_payment_ms_currency_group" style="display: none;">
+                        <div class="form-group dividend_payment_holding_currency" data-modal-ui-element="add_currency_modal_ui_element"></div>
+                    </div>
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6" data-normal="12" data-advanced="6">
                             <div class="form-group">
-                                <label for="dividend_payment_amount_per_share"><span data-i18n="amount_per_share">AMOUNT PER SHARE</span></label>
-                                <div class="input-group">
-                                    <input type="number" name="amountNXTPerShare" id="dividend_payment_amount_per_share" class="form-control" placeholder="" step="any" tabindex="1">
-                                    <span class="input-group-addon">NXT</span>
-                                </div>
+                                <label for="dividend_payment_amount_per_share">
+                                    <span data-i18n="amount_per_share">AMOUNT PER SHARE</span>
+                                    <i class="fa fa-info-circle show_popover" data-container="body" style="color:#4CAA6E"></i>
+                                </label>
+                                <input class="form-control" id="dividend_payment_amount_per_share" name="amountPerShare" placeholder="" step="any" tabindex="3" type="number">
                             </div>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
                                 <label for="dividend_payment_height"><span data-i18n="height">HEIGHT</span></label> <i>Current Height: <span class="nrs_current_block"></span></i> <i class="fa fa-exclamation-circle show_popover" data-content="Dividend calculation height must be within the last 1440 blocks." data-i18n="[data-content]dividend_payment_height_help" data-container="body" style="color:red"></i>
-                                <input type="number" name="height" id="dividend_payment_height" class="form-control" min="0" placeholder="Height" data-i18n="height" data-default="" value="" tabindex="2">
+                                <input class="form-control" data-default="" data-i18n="height" id="dividend_payment_height" min="0" name="height" placeholder="Height" tabindex="4" type="number" value="">
                             </div>
                         </div>
                     </div>
@@ -412,8 +428,6 @@
                     <div data-replace-with-modal-template="advanced_rt_hash_template"></div>
                     <div data-replace-with-modal-template="advanced_broadcast_template"></div>
                     <div data-replace-with-modal-template="advanced_note_to_self_template"></div>
-                    
-                    <div class="callout dividend_payment_info" style="display:none;margin-bottom: 0;"></div>
                     <input type="hidden" name="request_type" value="dividendPayment" />
                 </form>
             </div>

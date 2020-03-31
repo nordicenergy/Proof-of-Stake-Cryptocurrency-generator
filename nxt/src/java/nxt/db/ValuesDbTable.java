@@ -1,6 +1,6 @@
 /*
  * Copyright © 2013-2016 The Nxt Core Developers.
- * Copyright © 2016-2018 Jelurida IP B.V.
+ * Copyright © 2016-2020 Jelurida IP B.V.
  *
  * See the LICENSE.txt file at the top-level directory of this distribution
  * for licensing information.
@@ -108,11 +108,11 @@ public abstract class ValuesDbTable<T,V> extends DerivedDbTable {
     }
 
     @Override
-    public final void rollback(int height) {
+    public final void popOffTo(int height) {
         if (multiversion) {
-            VersionedEntityDbTable.rollback(db, table, height, dbKeyFactory);
+            VersionedEntityDbTable.popOff(db, table, height, dbKeyFactory);
         } else {
-            super.rollback(height);
+            super.popOffTo(height);
         }
     }
 

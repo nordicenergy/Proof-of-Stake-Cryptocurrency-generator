@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -24,9 +24,9 @@ var NRS = (function(NRS, $) {
     };
 
 	NRS.pages.account_control = function(callback) {
-		
-	}
-	
+
+	};
+
 	NRS.setup.account_control = function() {
 
 	};
@@ -43,7 +43,7 @@ var NRS = (function(NRS, $) {
 			inputName: "controlQuorumNXT",
 			addonText: "NXT",
 			addonI18n: "nxt_unit"
-		}
+		};
 		var $elems = NRS.initModalUIElement($modal, '.phasing_only_amount_nxt', 'simple_input_with_addon_modal_ui_element', context);
 		$elems.find('input').prop("disabled", true);
 
@@ -54,7 +54,7 @@ var NRS = (function(NRS, $) {
 			inputName: "controlQuorumQNTf",
 			addonText: "Quantity",
 			addonI18n: "quantity"
-		}
+		};
 		var $elems = NRS.initModalUIElement($modal, '.phasing_only_asset_quantity', 'simple_input_with_addon_modal_ui_element', context);
 		$elems.find('input').prop("disabled", true);
 
@@ -65,7 +65,7 @@ var NRS = (function(NRS, $) {
 			inputName: "controlQuorumQNTf",
 			addonText: "Units",
 			addonI18n: "units"
-		}
+		};
 		var $elems = NRS.initModalUIElement($modal, '.phasing_only_currency_units', 'simple_input_with_addon_modal_ui_element', context);
 		$elems.find('input').prop("disabled", true);
 
@@ -74,7 +74,7 @@ var NRS = (function(NRS, $) {
 			labelI18n: "accounts_whitelist",
 			helpI18n: "approve_transaction_accounts_requested_help",
 			inputName: "controlWhitelisted"
-		}
+		};
 		var $elems = NRS.initModalUIElement($modal, '.add_phasing_only_whitelist_group', 'multi_accounts_modal_ui_element', context);
 		$elems.find('input').prop("disabled", true);
 
@@ -83,7 +83,7 @@ var NRS = (function(NRS, $) {
 			labelI18n: "min_balance_type",
 			helpI18n: "approve_transaction_min_balance_type_help",
 			selectName: "controlMinBalanceModel"
-		}
+		};
 		var $elems = NRS.initModalUIElement($modal, '.phasing_only_min_balance_model_group', 'min_balance_model_modal_ui_element', context);
 		$elems.find('select').prop("disabled", true);
 
@@ -107,7 +107,7 @@ var NRS = (function(NRS, $) {
 			inputName: "",
 			addonText: "",
 			addonI18n: ""
-		}
+		};
 		context['inputName'] = 'controlMinBalanceNXT';
 		context['addonText'] = 'NXT';
 		context['addonI18n'] = 'nxt_unit';
@@ -135,7 +135,7 @@ var NRS = (function(NRS, $) {
 			inputIdName: "controlHolding",
 			inputDecimalsName: "controlHoldingDecimals",
 			helpI18n: "add_asset_modal_help"
-		}
+		};
 		$elems = NRS.initModalUIElement($modal, '.phasing_only_holding_asset', 'add_asset_modal_ui_element', context);
 		$elems.find('input').prop("disabled", true);
 		$elems = NRS.initModalUIElement($modal, '.phasing_only_holding_asset_optional', 'add_asset_modal_ui_element', context);
@@ -149,7 +149,7 @@ var NRS = (function(NRS, $) {
 			inputIdName: "controlHolding",
 			inputDecimalsName: "controlHoldingDecimals",
 			helpI18n: "add_currency_modal_help"
-		}
+		};
 		$elems = NRS.initModalUIElement($modal, '.phasing_only_holding_currency', 'add_currency_modal_ui_element', context);
 		$elems.find('input').prop("disabled", true);
 		$elems = NRS.initModalUIElement($modal, '.phasing_only_holding_currency_optional', 'add_currency_modal_ui_element', context);

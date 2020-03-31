@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -69,8 +69,8 @@ var NRS = (function (NRS, $) {
         'FORGING': 'forging',
         'NOT_FORGING': 'not_forging',
         'UNKNOWN': 'unknown',
-        'LAST_KNOWN_BLOCK': { id: "14750301419256427185", height: "1865000" },
-        'LAST_KNOWN_TESTNET_BLOCK': { id: "9750947151916374106", height: "1825000" },
+        'LAST_KNOWN_BLOCK': { id: "12867872999574551211", height: "2532000" },
+        'LAST_KNOWN_TESTNET_BLOCK': { id: "11273677639410705531", height: "2496000" },
         'IGNIS_CURRENCY_CODE': "JLRDA",
         'SCHEDULE_PREFIX': "schedule"
     };

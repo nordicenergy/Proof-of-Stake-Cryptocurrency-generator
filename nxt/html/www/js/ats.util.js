@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -15,7 +15,7 @@
  ******************************************************************************/
 
 /**
- * Utility functions for API test servlet 
+ * Utility functions for API test servlet
  *
  * @depends {ats.js}
  */
@@ -30,14 +30,14 @@ var ATS = (function(ATS, $, undefined) {
                 return sParameterName[1];
             }
         }
-    }
+    };
 
     ATS.setCookie = function(cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays*24*60*60*1000));
         var expires = 'expires='+d.toUTCString();
         document.cookie = cname + '=' + cvalue + '; ' + expires;
-    }
+    };
 
     ATS.getCookie = function(cname) {
         var name = cname + '=';
@@ -48,7 +48,7 @@ var ATS = (function(ATS, $, undefined) {
             if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
         }
         return "";
-    }
+    };
 
     return ATS;
 }(ATS || {}, jQuery));

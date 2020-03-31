@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -496,7 +496,7 @@ var NRS = (function (NRS, $, undefined) {
 
             if (error != "abort") {
                 if (options.remoteNode) {
-                    options.remoteNode.blacklist();
+                    NRS.remoteNodesMgr.blacklistAddress(options.remoteNode.address);
                 } else {
                     NRS.resetRemoteNode(true);
                 }
@@ -906,6 +906,18 @@ var NRS = (function (NRS, $, undefined) {
                     return false;
                 }
                 break;
+            case "increaseAssetShares":
+                if (transaction.type !== 2 || transaction.subtype !== 8) {
+                    return false;
+                }
+                transaction.asset = String(converters.byteArrayToBigInteger(byteArray, pos));
+                pos += 8;
+                transaction.quantityQNT = String(converters.byteArrayToBigInteger(byteArray, pos));
+                pos += 8;
+                if (transaction.asset !== data.asset || transaction.quantityQNT !== data.quantityQNT) {
+                    return false;
+                }
+                break;
             case "dividendPayment":
                 if (transaction.type !== 2 || transaction.subtype !== 6) {
                     return false;
@@ -921,6 +933,35 @@ var NRS = (function (NRS, $, undefined) {
                     transaction.amountNQTPerQNT !== data.amountNQTPerQNT) {
                     return false;
                 }
+                break;
+            case "setAssetProperty":
+                if (transaction.type !== 2 || transaction.subtype !== 10) {
+                    return false;
+                }
+                if (data.asset !== String(converters.byteArrayToBigInteger(byteArray, pos))) {
+                    return false;
+                }
+                pos += 8;
+                length = byteArray[pos];
+                pos++;
+                if (converters.byteArrayToString(byteArray, pos, length) !== data.property) {
+                    return false;
+                }
+                pos += length;
+                length = byteArray[pos];
+                pos++;
+                if (converters.byteArrayToString(byteArray, pos, length) !== data.value) {
+                    return false;
+                }
+                pos += length;
+                break;
+            case "deleteAssetProperty":
+                if (transaction.type !== 2 || transaction.subtype !== 11) {
+                    return false;
+                }
+                // no way to validate the property id, just skip it
+                String(converters.byteArrayToBigInteger(byteArray, pos));
+                pos += 8;
                 break;
             case "dgsListing":
                 if (transaction.type !== 3 && transaction.subtype != 0) {

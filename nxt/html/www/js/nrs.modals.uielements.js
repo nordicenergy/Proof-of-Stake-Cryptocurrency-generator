@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -90,7 +90,7 @@ var NRS = (function(NRS, $, undefined) {
 		$(_acmElem).find('.acm_ue_currency_id_input').prop("disabled", true);
 		$(_acmElem).find('.acm_ue_currency_decimals_input').val("");
 		$(_acmElem).find('.acm_ue_currency_decimals_input').prop("disabled", true);
-	}
+	};
 
 	_loadCurrencyInfoForCode = function() {
 		if (_currencyCode && _currencyCode.length >= 3) {
@@ -112,7 +112,7 @@ var NRS = (function(NRS, $, undefined) {
 		} else {
 			_setAssetInfoNotExisting();
 		}
-	}
+	};
 
 	$('body').on('keyup', '.modal div[data-modal-ui-element="add_currency_modal_ui_element"] .acm_ue_currency_code_input', function(e) {
 		_acmElem = $(this).closest('div[data-modal-ui-element="add_currency_modal_ui_element"]');
@@ -127,7 +127,7 @@ var NRS = (function(NRS, $, undefined) {
 		$(_aamElem).find('.aam_ue_asset_name').html($.t('not_existing', 'Not existing'));
 		$(_aamElem).find('.aam_ue_asset_decimals_input').val("");
 		$(_aamElem).find('.aam_ue_asset_decimals_input').prop("disabled", true);
-	}
+	};
 
 	_loadAssetInfoForId = function() {
 		if (_assetId && _assetId.length > 0) {
@@ -139,6 +139,7 @@ var NRS = (function(NRS, $, undefined) {
 					$(_aamElem).find('.aam_ue_asset_name').html(nameString);
 					$(_aamElem).find('.aam_ue_asset_decimals_input').val(String(response.decimals));
 					$(_aamElem).find('.aam_ue_asset_decimals_input').prop("disabled", false);
+					$(_aamElem).find('.aam_ue_asset_name_input').val(response.name);
 				} else {
 					_setAssetInfoNotExisting();
 				}
@@ -146,7 +147,7 @@ var NRS = (function(NRS, $, undefined) {
 		} else {
 			_setAssetInfoNotExisting();
 		}
-	}
+	};
 
 	$('body').on('keyup', '.modal div[data-modal-ui-element="add_asset_modal_ui_element"] .aam_ue_asset_id_input', function(e) {
 		_aamElem = $(this).closest('div[data-modal-ui-element="add_asset_modal_ui_element"]');

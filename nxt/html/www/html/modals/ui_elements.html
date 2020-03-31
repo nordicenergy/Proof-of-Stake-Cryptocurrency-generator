@@ -1,6 +1,6 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~ Copyright © 2013-2016 The Nxt Core Developers.                            ~
-  ~ Copyright © 2016-2018 Jelurida IP B.V.                                    ~
+  ~ Copyright © 2016-2020 Jelurida IP B.V.                                    ~
   ~                                                                           ~
   ~ See the LICENSE.txt file at the top-level directory of this distribution  ~
   ~ for licensing information.                                                ~
@@ -63,6 +63,7 @@
     <div class="input-group">
         <input type="text"  class="form-control aam_ue_asset_id_input" name="{{inputIdName}}" size="20" maxlength="20" id="{{modalName}}_{{labelI18n}}" placeholder="Asset ID" data-i18n="[placeholder]asset_id" tabindex="2" />
         <input type="hidden" class="aam_ue_asset_decimals_input" name="{{inputDecimalsName}}" disabled>
+        <input class="aam_ue_asset_name_input" disabled name="aam_ue_asset_name_input_name" type="hidden">
         <span class="input-group-addon" style="min-width:440px;text-align:left;">
             <span class="aam_ue_asset_name">-</span>
         </span>
@@ -107,7 +108,7 @@
             <option value="2" data-i18n="min_balance_type_asset">Min balance of asset quantity required</option>
             <option value="3" data-i18n="min_balance_type_currency">Min balance of currency units required</option>
         </select>
-    </div>    
+    </div>
 </div>
 
 <div id="hash_algorithm_model_modal_ui_element">

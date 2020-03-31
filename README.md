@@ -1,16 +1,18 @@
+
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/nordicenergy/proof-of-stake-cryptocurrency-generator) 
 
 # Proof of Stake Cryptocurrency generator ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/nordicenergy_generator)
-Noedic Energy Proof of Stake cryptocurrency with its own blockchain based on "Nxt Blockchain Creation Kit".
-It should satisfy the requirements of the Jelurida Public License version 1.1 for the Nxt Public Blockchain Platform.
+Nordic Energy Proof of Stake Cryptocurrency with its own blockchain based on "Nxt Blockchain Creation Kit".
+It should satisfy the requirements of the Nordic Energy Public License version 1.1 for the Nordic Energy Public
+ Blockchain Platform.
 Basically 10% of your tokens should be given to the owners of the Nxt Cryptocurrency. Furthermore, the source needs to be disclosed and under the same license. Keep in mind that this generator is not perfect!
 * Website: https://coingenerator.sh
 * Read the story: https://medium.com/learning-lab/how-to-build-your-own-cryptocurrency-proof-of-stake-in-just-a-few-minutes-6d526bca4a91
 
-This generator will assist you building your NXT clone.
+This generator will assist you building your NET clone.
 If you are an advanced user follow directly the official tutorial:
-* Nxt-clone-starter: https://bitbucket.org/Jelurida/nxt-clone-starter
-* Introduction to the NXT Blockchain Creation Kit: https://www.youtube.com/watch?v=6Wg3uv07GU4
+* Net-clone-starter: https://bitbucket.org/Jelurida/nxt-clone-starter
+* Introduction to the Nordic Energy Blockchain Creation Kit: https://www.youtube.com/watch?v=6Wg3uv07GU4
 
 
 ## Requirements
@@ -19,7 +21,7 @@ If you are an advanced user follow directly the official tutorial:
 
 ### How to install Java
 * General - Java 8
-* Ubuntu - http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html
+* Ubuntu - https://linuxize.com/post/install-java-on-ubuntu-18-04/
 * Debian - http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
 * FreeBSD - pkg install openjdk8
 
@@ -29,12 +31,15 @@ If you are an advanced user follow directly the official tutorial:
 ## Video tutorial
 * [Create your blockchain with that cryptocurrency](https://www.youtube.com/watch?v=_Ww5IZZB0WY) (French with English Subtitle)
 
-## Step 1 - Download the Nxt blockchain and create the genesis block
-1. Clone this repository with `git clone https://github.com/nordicenergy/åroof-of-stake-cryptocurrency-generator`, also feel free to fork this repository!
+## Step 1 - Download the Nordic Energy blockchain and create the genesis block
+1. Clone this repository with `git clone https://github.com/nordicenergy/proof-of-stake-cryptocurrency-generator`, also feel free to fork this repository!
 2. Go to the cloned folder and install the npm dependencies with `npm install`
-3. Run the Nxt Blockchain with `npm run nxt`
+3. Run the Nordic Energy Blockchain with `npm run nxt`
 4. Then open http://localhost:7876/index.html in your favourite browser. Then create an account and save the private keys securely, wait until the full blockchain is synced, this can take a few hours. Copy your nxt address and also its public key.
-5. Open the file `docs/config/newGenesisAccounts.json`, this file will define the repartition of the coins your are creating. On the first block creation 1 billion of coins will be distributed, 10% of them will be distributed to the Nxt holders (this is part of the Jelurida Public License). You have to put the list of accounts you want to credit in the first block (the genesis block) and its matching public key. The total of the amounts should be 90000000000000000 if you don't know what to do, just put your NXT address your created (Step 1-4), and it's public key like this and save it. If you are not sure about what you are doing check this video: https://www.youtube.com/watch?v=6Wg3uv07GU4
+5. Open the file `docs/config/newGenesisAccounts.json`, this file will define the repartition of the coins your are
+ creating. On the first block creation 1 billion of coins will be distributed, 10% of them will be distributed to the
+  Nxt holders (this is part of the Nordic Energy Public License). You have to put the list of accounts you want to
+   credit in the first block (the genesis block) and its matching public key. The total of the amounts should be 90000000000000000 if you don't know what to do, just put your NXT address your created (Step 1-4), and it's public key like this and save it. If you are not sure about what you are doing check this video: https://www.youtube.com/watch?v=6Wg3uv07GU4
 ```
 {
     "balances": {

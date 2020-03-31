@@ -1,6 +1,6 @@
 /*
  * Copyright © 2013-2016 The Nxt Core Developers.
- * Copyright © 2016-2018 Jelurida IP B.V.
+ * Copyright © 2016-2020 Jelurida IP B.V.
  *
  * See the LICENSE.txt file at the top-level directory of this distribution
  * for licensing information.
@@ -231,6 +231,16 @@ public final class Logger {
     }
 
     /**
+     * Log an ERROR message
+     *
+     * @param       format             Message format
+     * @param       args               Message args
+     */
+    public static void logErrorMessage(String format, Object ... args) {
+        doLog(Level.ERROR, String.format(format, args), null);
+    }
+
+    /**
      * Log an ERROR exception
      *
      * @param       message             Message
@@ -251,6 +261,10 @@ public final class Logger {
      */
     public static void logWarningMessage(String message) {
         doLog(Level.WARN, message, null);
+    }
+
+    public static void logWarningMessage(String format, Object ... args) {
+        doLog(Level.WARN, String.format(format, args), null);
     }
 
     /**

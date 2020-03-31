@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright © 2013-2016 The Nxt Core Developers.                             *
- * Copyright © 2016-2018 Jelurida IP B.V.                                     *
+ * Copyright © 2016-2020 Jelurida IP B.V.                                     *
  *                                                                            *
  * See the LICENSE.txt file at the top-level directory of this distribution   *
  * for licensing information.                                                 *
@@ -77,8 +77,7 @@ sha256_sigma0(W[(j+1)&0x0f]));
 }
 
 /* Hash constant words K: */
-var K256 = new Array(
-	0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5,
+var K256 = [0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5,
 	0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
 	0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3,
 	0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
@@ -93,8 +92,7 @@ var K256 = new Array(
 	0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5,
 	0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
 	0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208,
-	0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2
-);
+	0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2];
 
 /* global arrays */
 var ihash, count, buffer;
@@ -235,7 +233,7 @@ function sha256_encode_bytes() {
 
 /* Get the internal hash as a hex string */
 function sha256_encode_hex() {
-	var output = new String();
+	var output = String();
 	for(var i=0; i<8; i++) {
 		for(var j=28; j>=0; j-=4)
 			output += sha256_hex_digits.charAt((ihash[i] >>> j) & 0x0f);
